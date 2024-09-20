@@ -19,10 +19,8 @@
           </h1>
 
           <p class="pt-10 text-4xl sm:text-6xl font-black">
-            I <span class="text-accent">imagine</span> stuff,
-            <br>then <span class="text-accent">build</span> stuff,
-            <br>then <span class="text-accent">break</span> stuff,
-            <br>to finally <span class="text-accent">fix</span> stuff!
+            Most of the time<br>I <span class="text-accent">imagine</span>,
+            <span class="text-accent">build</span>, <span class="text-accent">break</span> and <span class="text-accent">fix</span> stuff!
           </p>
         </header>
 
