@@ -15,7 +15,7 @@
         <header>
           <h1 class="text-2xl sm:text-4xl font-black">
             Hi! 👋<br>
-            I'm <NuxtImg src="/me.jpg" height="40" width="40" alt="Arnaud Gissinger" class="size-7 sm:size-10 inline rounded-full object-cover" /> Arnaud,
+            I'm <NuxtImg src="/android-chrome-192x192.png" height="40" width="40" alt="Arnaud Gissinger" class="size-7 sm:size-10 inline rounded-full object-cover" /> Arnaud,
           </h1>
 
           <p class="pt-10 text-4xl sm:text-6xl font-black">
