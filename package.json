@@ -20,6 +20,8 @@
     "@nuxtjs/tailwindcss": "^6.12.1",
     "nuxt": "^3.13.0",
     "nuxt-headlessui": "^1.2.0",
+    "nuxt-og-image": "^3.0.2",
+    "nuxt-schema-org": "^3.4.0",
     "vue": "latest",
     "vue-router": "latest"
   },

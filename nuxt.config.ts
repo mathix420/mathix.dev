@@ -2,6 +2,11 @@
 export default defineNuxtConfig({
   compatibilityDate: "2024-04-03",
 
+  site: {
+    url: "https://mathix.dev/",
+    name: "Arnaud Gissinger",
+  },
+
   nitro: {
     preset: "vercel-edge",
   },
@@ -16,7 +21,16 @@ export default defineNuxtConfig({
     "@nuxtjs/mdc",
     "nuxt-headlessui",
     "@nuxt/fonts",
+    "nuxt-og-image",
+    "nuxt-schema-org",
   ],
+
+  ogImage: {
+    fonts: [
+      "Archivo:400",
+      "Archivo:900",
+    ],
+  },
 
   fonts: {
     provider: "google",
