@@ -1,12 +1,28 @@
+<script setup lang="ts">
+defineOgImageComponent("Mathix");
+useSchemaOrg([
+  definePerson({
+    name: "Arnaud Gissinger",
+    image: "/android-chrome-512x512.png",
+    sameAs: [
+      "https://github.com/mathix420",
+      "https://www.linkedin.com/in/agissing/",
+      "https://bento.me/agissing",
+      "https://www.polywork.com/agissing/",
+      "https://posts.cv/mathix",
+      "https://read.cv/mathix",
+      "https://stackoverflow.com/users/9799292/mathix420",
+    ],
+  }),
+]);
+</script>
+
 <template>
   <Html class="bg-charcoal text-white">
     <Head>
       <Link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
       <Link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
       <Link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
-      <Meta property="og:image" content="https://images.unsplash.com/photo-1547658718-1cdaa0852790?ixlib=rb-1.2.1&amp;amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;amp;auto=format&amp;amp;fit=crop&amp;amp;w=700&amp;amp;q=80" />
-      <Meta property="og:type" content="website" />
-      <Meta property="og:title" content="Arnaud Gissinger's portfolio" />
       <Meta name="description" content="Arnaud Gissinger is a French Software Architect, ex-42 and ex-founder of Peach. Passionate about Open Source, Web Development, Design, and Entrepreneurship. He did his first program at 10, sold his first software at 15, and launched his first startup at 19." />
       <Title>Arnaud Gissinger</Title>
     </Head>
@@ -46,7 +62,7 @@
             <span class="text-accent">Entrepreneurship</span>.
 
             <br>
-            Did my first program at 10, sold my first software at 15, and launched my first startup at 19.
+            Did my first program at 10, sold my first software at 14, and launched my first startup at 19.
           </p>
         </section>
 
@@ -185,10 +201,49 @@
               <template #title>
                 Joined <span class="text-accent">@42 School</span>
               </template>
+              <template #description>
+                Finished 7 out of 1000 during the selection pool for the Paris campus.
+              </template>
               <template #images>
                 <NuxtImg height="176" loading="lazy" src="/images/42/1.png" alt="42 School" class="h-44 rounded-xl" />
                 <NuxtImg height="176" loading="lazy" src="/images/42/2.jpg" alt="42 School" class="h-44 rounded-xl" />
                 <NuxtImg height="176" loading="lazy" src="/images/42/3.jpg" alt="42 School" class="h-44 rounded-xl" />
+              </template>
+            </TimelineItem>
+
+            <TimelineItem date="2015-2018">
+              <template #title>
+                High School
+              </template>
+              <template #description>
+                Not the best way to learn stuff in my opinion.
+              </template>
+            </TimelineItem>
+
+            <TimelineItem date="2015">
+              <template #title>
+                Sold my first software
+              </template>
+              <template #description>
+                A cash register software, also built in VisualBasic.
+              </template>
+            </TimelineItem>
+
+            <TimelineItem date="2011">
+              <template #title>
+                My first program
+              </template>
+              <template #description>
+                A calculator in VisualBasic.
+              </template>
+            </TimelineItem>
+
+            <TimelineItem date="2000">
+              <template #title>
+                I'm born
+              </template>
+              <template #description>
+                Yes, I'm a millennial, sorry.
               </template>
             </TimelineItem>
           </div>
