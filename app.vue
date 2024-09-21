@@ -216,9 +216,6 @@ useSchemaOrg([
               <template #title>
                 High School
               </template>
-              <template #description>
-                Not the best way to learn stuff in my opinion.
-              </template>
             </TimelineItem>
 
             <TimelineItem date="2015">
