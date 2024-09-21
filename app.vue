@@ -250,7 +250,7 @@ useSchemaOrg([
           </div>
         </section>
 
-        <footer class="mt-32 sm:mt-64 flex flex-col items-center gap-5 text-white/30 hover:text-white transition-colors duration-1000">
+        <footer class="mt-32 flex flex-col items-center gap-5 text-white/30 hover:text-white transition-colors duration-1000">
           <Signature class="h-14 sm:h-28 w-fit" />
           <p class="text-center">
             By Arnaud Gissinger in 2024.
