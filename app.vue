@@ -1,5 +1,6 @@
 <script setup lang="ts">
-defineOgImageComponent("Mathix");
+// Disabled because of bundle size in Vercel edge
+// defineOgImageComponent("Mathix");
 useSchemaOrg([
   definePerson({
     name: "Arnaud Gissinger",

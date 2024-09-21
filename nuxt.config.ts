@@ -21,16 +21,16 @@ export default defineNuxtConfig({
     "@nuxtjs/mdc",
     "nuxt-headlessui",
     "@nuxt/fonts",
-    "nuxt-og-image",
+    // "nuxt-og-image",
     "nuxt-schema-org",
   ],
 
-  ogImage: {
-    fonts: [
-      "Archivo:400",
-      "Archivo:900",
-    ],
-  },
+  // ogImage: {
+  //   fonts: [
+  //     "Archivo:400",
+  //     "Archivo:900",
+  //   ],
+  // },
 
   fonts: {
     provider: "google",
