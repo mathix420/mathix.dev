@@ -132,9 +132,9 @@ useSeoMeta({
                 Unleash the true power of web apps instead of waiting for native Linux apps.
               </template>
               <template #images>
-                <NuxtImg format="webp" height="176" loading="lazy" src="/images/ftwa/1.png" alt="Free The Web Apps" class="h-44 rounded-xl" />
-                <NuxtImg format="webp" height="176" loading="lazy" src="/images/ftwa/2.png" alt="Free The Web Apps" class="h-44 rounded-xl" />
-                <NuxtImg format="webp" height="176" loading="lazy" src="/images/ftwa/3.png" alt="Free The Web Apps" class="h-44 rounded-xl" />
+                <ItemImage src="/images/ftwa/1.png" alt="Free The Web Apps" />
+                <ItemImage src="/images/ftwa/2.png" alt="Free The Web Apps" />
+                <ItemImage src="/images/ftwa/3.png" alt="Free The Web Apps" />
               </template>
             </TimelineItem>
 
@@ -144,6 +144,19 @@ useSeoMeta({
               </template>
               <template #description>
                 Get structured data out of LLMs.
+              </template>
+            </TimelineItem>
+
+            <TimelineItem date="2023" link="https://github.com/mathix420/brain">
+              <template #title>
+                Brain <CornerArrow class="mb-2" />
+              </template>
+              <template #description>
+                Search engine for your bookmarks.
+              </template>
+              <template #images>
+                <ItemImage src="/images/brain/1.png" alt="Brain" />
+                <ItemImage src="/images/brain/2.png" alt="Brain" />
               </template>
             </TimelineItem>
 
@@ -164,9 +177,9 @@ useSeoMeta({
                 Simple, lightweight, isomorphic, template-based validation library.
               </template>
               <template #images>
-                <NuxtImg format="webp" height="176" loading="lazy" src="/images/vuito/1.jpg" alt="Vuito" class="h-44 rounded-xl" />
-                <NuxtImg format="webp" height="176" loading="lazy" src="/images/vuito/2.png" alt="Vuito" class="h-44 rounded-xl" />
-                <NuxtImg format="webp" height="176" loading="lazy" src="/images/vuito/3.png" alt="Vuito" class="h-44 rounded-xl" />
+                <ItemImage src="/images/vuito/1.jpg" alt="Vuito" />
+                <ItemImage src="/images/vuito/2.png" alt="Vuito" />
+                <ItemImage src="/images/vuito/3.png" alt="Vuito" />
               </template>
             </TimelineItem>
 
@@ -208,10 +221,10 @@ useSeoMeta({
                 architecture on AWS.
               </template>
               <template #images>
-                <NuxtImg format="webp" height="176" loading="lazy" src="/images/stationf/1.jpg" alt="Station F" class="h-44 rounded-xl" />
-                <NuxtImg format="webp" height="176" loading="lazy" src="/images/stationf/3.jpg" alt="Station F" class="h-44 rounded-xl" />
-                <NuxtImg format="webp" height="176" loading="lazy" src="/images/stationf/2.jpg" alt="Station F" class="h-44 rounded-xl" />
-                <NuxtImg format="webp" height="176" loading="lazy" src="/images/stationf/4.jpg" alt="Station F" class="h-44 rounded-xl" />
+                <ItemImage src="/images/stationf/1.jpg" alt="Station F" />
+                <ItemImage src="/images/stationf/3.jpg" alt="Station F" />
+                <ItemImage src="/images/stationf/2.jpg" alt="Station F" />
+                <ItemImage src="/images/stationf/4.jpg" alt="Station F" />
               </template>
             </TimelineItem>
 
@@ -223,9 +236,9 @@ useSeoMeta({
                 Finished 7 out of 1000 during the selection pool for the Paris campus.
               </template>
               <template #images>
-                <NuxtImg format="webp" height="176" loading="lazy" src="/images/42/1.png" alt="42 School" class="h-44 rounded-xl" />
-                <NuxtImg format="webp" height="176" loading="lazy" src="/images/42/2.jpg" alt="42 School" class="h-44 rounded-xl" />
-                <NuxtImg format="webp" height="176" loading="lazy" src="/images/42/3.jpg" alt="42 School" class="h-44 rounded-xl" />
+                <ItemImage src="/images/42/1.png" alt="42 School" />
+                <ItemImage src="/images/42/2.jpg" alt="42 School" />
+                <ItemImage src="/images/42/3.jpg" alt="42 School" />
               </template>
             </TimelineItem>
 
