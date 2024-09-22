@@ -1,6 +1,7 @@
 <script setup lang="ts">
 const title = "Arnaud Gissinger";
 const description = "Arnaud Gissinger is a French Software Architect, ex-42 and ex-founder of Peach. Passionate about Open Source, Web Development, Design, and Entrepreneurship. He did his first program at 10, sold his first software at 15, and launched his first startup at 19.";
+const smallDescription = "Arnaud Gissinger is a French Passionate Software Architect, previously 42 Student and founder.";
 const url = useSiteConfig().url;
 
 // Disabled because of bundle size in Vercel edge
@@ -27,7 +28,7 @@ useSeoMeta({
   description,
   ogImage: `${url}og.png`,
   ogTitle: title,
-  ogDescription: description,
+  ogDescription: smallDescription,
   ogUrl: url,
   twitterTitle: title,
   twitterDescription: description,
