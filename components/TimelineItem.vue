@@ -9,7 +9,7 @@ const slots = useSlots();
 <template>
   <article>
     <!-- Date -->
-    <p class="text-2xl text-white/30">
+    <p class="text-2xl text-white/25">
       {{ date }}
     </p>
 

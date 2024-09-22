@@ -1,9 +1,13 @@
 <script setup lang="ts">
+const title = "Arnaud Gissinger";
+const description = "Arnaud Gissinger is a French Software Architect, ex-42 and ex-founder of Peach. Passionate about Open Source, Web Development, Design, and Entrepreneurship. He did his first program at 10, sold his first software at 15, and launched his first startup at 19.";
+
 // Disabled because of bundle size in Vercel edge
 // defineOgImageComponent("Mathix");
+
 useSchemaOrg([
   definePerson({
-    name: "Arnaud Gissinger",
+    name: title,
     image: "/android-chrome-512x512.png",
     sameAs: [
       "https://github.com/mathix420",
@@ -16,23 +20,34 @@ useSchemaOrg([
     ],
   }),
 ]);
+
+useSeoMeta({
+  title,
+  description,
+  ogImage: "/og.png",
+  ogTitle: title,
+  ogDescription: description,
+  ogUrl: useSiteConfig().url,
+  twitterTitle: title,
+  twitterDescription: description,
+  twitterImage: "/og.png",
+  twitterCard: "summary_large_image",
+});
 </script>
 
 <template>
-  <Html class="bg-charcoal text-white">
+  <Html class="bg-charcoal text-white" lang="en-US">
     <Head>
       <Link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
       <Link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
       <Link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
-      <Meta name="description" content="Arnaud Gissinger is a French Software Architect, ex-42 and ex-founder of Peach. Passionate about Open Source, Web Development, Design, and Entrepreneurship. He did his first program at 10, sold his first software at 15, and launched his first startup at 19." />
-      <Title>Arnaud Gissinger</Title>
     </Head>
     <Body>
       <main class="min-h-dvh max-w-4xl mx-auto px-5 py-10 sm:px-10 sm:py-20 selection:bg-accent/30">
         <header>
           <h1 class="text-2xl sm:text-4xl font-black">
             Hi! 👋<br>
-            I'm <NuxtImg src="/android-chrome-192x192.png" height="40" width="40" alt="Arnaud Gissinger" class="size-7 sm:size-10 inline rounded-full object-cover" /> Arnaud,
+            I'm <NuxtImg format="webp" src="/android-chrome-192x192.png" height="40" width="40" alt="Arnaud Gissinger" class="size-7 sm:size-10 inline rounded-full object-cover" /> Arnaud,
           </h1>
 
           <p class="pt-10 text-4xl sm:text-6xl font-black">
@@ -70,22 +85,22 @@ useSchemaOrg([
         <!-- Links -->
         <section class="py-5 sm:pt-20">
           <div class="mt-5 flex justify-evenly">
-            <NuxtLink to="https://github.com/mathix420" target="_blank">
+            <NuxtLink aria-label="github" to="https://github.com/mathix420" target="_blank">
               <Icon name="simple-icons:github" class="size-7 sm:size-10" />
             </NuxtLink>
-            <NuxtLink to="https://bento.me/agissing" target="_blank">
+            <NuxtLink aria-label="bento" to="https://bento.me/agissing" target="_blank">
               <Icon name="simple-icons:bento" class="size-7 sm:size-10" />
             </NuxtLink>
-            <NuxtLink to="https://stackoverflow.com/users/9799292/mathix420?tab=profile" target="_blank">
+            <NuxtLink aria-label="stackoverflow" to="https://stackoverflow.com/users/9799292/mathix420?tab=profile" target="_blank">
               <Icon name="simple-icons:stackoverflow" class="size-7 sm:size-10" />
             </NuxtLink>
-            <NuxtLink to="https://matrix.to/#/@mathix:beeper.com" target="_blank">
+            <NuxtLink aria-label="matrix" to="https://matrix.to/#/@mathix:beeper.com" target="_blank">
               <Icon name="simple-icons:matrix" class="size-7 sm:size-10" />
             </NuxtLink>
-            <NuxtLink to="https://linkedin.com/in/agissing" target="_blank">
+            <NuxtLink aria-label="linkedin" to="https://linkedin.com/in/agissing" target="_blank">
               <Icon name="simple-icons:linkedin" class="size-7 sm:size-10" />
             </NuxtLink>
-            <NuxtLink to="mailto:agissing@student.42.fr" target="_blank">
+            <NuxtLink aria-label="email" to="mailto:agissing@student.42.fr" target="_blank">
               <Icon name="ic:round-email" class="size-7 sm:size-10" />
             </NuxtLink>
           </div>
@@ -115,9 +130,9 @@ useSchemaOrg([
                 Unleash the true power of web apps instead of waiting for native Linux apps.
               </template>
               <template #images>
-                <NuxtImg height="176" loading="lazy" src="/images/ftwa/1.png" alt="Free The Web Apps" class="h-44 rounded-xl" />
-                <NuxtImg height="176" loading="lazy" src="/images/ftwa/2.png" alt="Free The Web Apps" class="h-44 rounded-xl" />
-                <NuxtImg height="176" loading="lazy" src="/images/ftwa/3.png" alt="Free The Web Apps" class="h-44 rounded-xl" />
+                <NuxtImg format="webp" height="176" loading="lazy" src="/images/ftwa/1.png" alt="Free The Web Apps" class="h-44 rounded-xl" />
+                <NuxtImg format="webp" height="176" loading="lazy" src="/images/ftwa/2.png" alt="Free The Web Apps" class="h-44 rounded-xl" />
+                <NuxtImg format="webp" height="176" loading="lazy" src="/images/ftwa/3.png" alt="Free The Web Apps" class="h-44 rounded-xl" />
               </template>
             </TimelineItem>
 
@@ -147,9 +162,9 @@ useSchemaOrg([
                 Simple, lightweight, isomorphic, template-based validation library.
               </template>
               <template #images>
-                <NuxtImg height="176" loading="lazy" src="/images/vuito/1.jpg" alt="Vuito" class="h-44 rounded-xl" />
-                <NuxtImg height="176" loading="lazy" src="/images/vuito/2.png" alt="Vuito" class="h-44 rounded-xl" />
-                <NuxtImg height="176" loading="lazy" src="/images/vuito/3.png" alt="Vuito" class="h-44 rounded-xl" />
+                <NuxtImg format="webp" height="176" loading="lazy" src="/images/vuito/1.jpg" alt="Vuito" class="h-44 rounded-xl" />
+                <NuxtImg format="webp" height="176" loading="lazy" src="/images/vuito/2.png" alt="Vuito" class="h-44 rounded-xl" />
+                <NuxtImg format="webp" height="176" loading="lazy" src="/images/vuito/3.png" alt="Vuito" class="h-44 rounded-xl" />
               </template>
             </TimelineItem>
 
@@ -191,10 +206,10 @@ useSchemaOrg([
                 architecture on AWS.
               </template>
               <template #images>
-                <NuxtImg height="176" loading="lazy" src="/images/stationf/1.jpg" alt="Station F" class="h-44 rounded-xl" />
-                <NuxtImg height="176" loading="lazy" src="/images/stationf/3.jpg" alt="Station F" class="h-44 rounded-xl" />
-                <NuxtImg height="176" loading="lazy" src="/images/stationf/2.jpg" alt="Station F" class="h-44 rounded-xl" />
-                <NuxtImg height="176" loading="lazy" src="/images/stationf/4.jpg" alt="Station F" class="h-44 rounded-xl" />
+                <NuxtImg format="webp" height="176" loading="lazy" src="/images/stationf/1.jpg" alt="Station F" class="h-44 rounded-xl" />
+                <NuxtImg format="webp" height="176" loading="lazy" src="/images/stationf/3.jpg" alt="Station F" class="h-44 rounded-xl" />
+                <NuxtImg format="webp" height="176" loading="lazy" src="/images/stationf/2.jpg" alt="Station F" class="h-44 rounded-xl" />
+                <NuxtImg format="webp" height="176" loading="lazy" src="/images/stationf/4.jpg" alt="Station F" class="h-44 rounded-xl" />
               </template>
             </TimelineItem>
 
@@ -206,9 +221,9 @@ useSchemaOrg([
                 Finished 7 out of 1000 during the selection pool for the Paris campus.
               </template>
               <template #images>
-                <NuxtImg height="176" loading="lazy" src="/images/42/1.png" alt="42 School" class="h-44 rounded-xl" />
-                <NuxtImg height="176" loading="lazy" src="/images/42/2.jpg" alt="42 School" class="h-44 rounded-xl" />
-                <NuxtImg height="176" loading="lazy" src="/images/42/3.jpg" alt="42 School" class="h-44 rounded-xl" />
+                <NuxtImg format="webp" height="176" loading="lazy" src="/images/42/1.png" alt="42 School" class="h-44 rounded-xl" />
+                <NuxtImg format="webp" height="176" loading="lazy" src="/images/42/2.jpg" alt="42 School" class="h-44 rounded-xl" />
+                <NuxtImg format="webp" height="176" loading="lazy" src="/images/42/3.jpg" alt="42 School" class="h-44 rounded-xl" />
               </template>
             </TimelineItem>
 
@@ -247,7 +262,7 @@ useSchemaOrg([
           </div>
         </section>
 
-        <footer class="mt-32 flex flex-col items-center gap-5 text-white/30 hover:text-white transition-colors duration-1000">
+        <footer class="mt-32 flex flex-col items-center gap-5 text-white/25 hover:text-white transition-colors duration-1000">
           <Signature class="h-14 sm:h-28 w-fit" />
           <p class="text-center">
             By Arnaud Gissinger in 2024.
