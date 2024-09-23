@@ -23,6 +23,16 @@ useSchemaOrg([
   }),
 ]);
 
+useHead({
+  script: [
+    {
+      "src": "https://cloud.umami.is/script.js",
+      "data-website-id": "0e6f097f-7dbc-44d2-9843-5e0e09a290a8",
+      "defer": true,
+    },
+  ],
+});
+
 useSeoMeta({
   title,
   description,
@@ -38,18 +48,42 @@ useSeoMeta({
 </script>
 
 <template>
-  <Html class="bg-charcoal text-white" lang="en-US">
+  <Html
+    class="bg-charcoal text-white"
+    lang="en-US"
+  >
     <Head>
-      <Link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-      <Link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
-      <Link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+      <Link
+        rel="apple-touch-icon"
+        sizes="180x180"
+        href="/apple-touch-icon.png"
+      />
+      <Link
+        rel="icon"
+        type="image/png"
+        sizes="32x32"
+        href="/favicon-32x32.png"
+      />
+      <Link
+        rel="icon"
+        type="image/png"
+        sizes="16x16"
+        href="/favicon-16x16.png"
+      />
     </Head>
     <Body>
       <main class="min-h-dvh max-w-4xl mx-auto px-5 py-10 sm:px-10 sm:py-20 selection:bg-accent/30">
         <header>
           <h1 class="text-2xl sm:text-4xl font-black">
             Hi! 👋<br>
-            I'm <NuxtImg format="webp" src="/android-chrome-192x192.png" height="40" width="40" alt="Arnaud Gissinger" class="size-7 sm:size-10 inline rounded-full object-cover" /> Arnaud,
+            I'm <NuxtImg
+              format="webp"
+              src="/android-chrome-192x192.png"
+              height="40"
+              width="40"
+              alt="Arnaud Gissinger"
+              class="size-7 sm:size-10 inline rounded-full object-cover"
+            /> Arnaud,
           </h1>
 
           <p class="pt-10 text-4xl sm:text-6xl font-black">
@@ -66,7 +100,8 @@ useSeoMeta({
           <p class="mt-5 text-lg sm:text-xl">
             I'm a French <span class="text-accent">Software Architect</span>, ex<NuxtLink
               to="https://42.fr/en/the-program/innovative-learning/"
-              target="_blank" class="text-accent hover:underline"
+              target="_blank"
+              class="text-accent hover:underline"
             >
               42 Student
             </NuxtLink>
@@ -87,23 +122,71 @@ useSeoMeta({
         <!-- Links -->
         <section class="py-5 sm:pt-20">
           <div class="mt-5 flex justify-evenly">
-            <NuxtLink aria-label="github" to="https://github.com/mathix420" target="_blank">
-              <Icon name="simple-icons:github" class="size-7 sm:size-10" />
+            <NuxtLink
+              data-umami-event="Github Link"
+              aria-label="github"
+              to="https://github.com/mathix420"
+              target="_blank"
+            >
+              <Icon
+                name="simple-icons:github"
+                class="size-7 sm:size-10"
+              />
             </NuxtLink>
-            <NuxtLink aria-label="bento" to="https://bento.me/agissing" target="_blank">
-              <Icon name="simple-icons:bento" class="size-7 sm:size-10" />
+            <NuxtLink
+              data-umami-event="Bento Link"
+              aria-label="bento"
+              to="https://bento.me/agissing"
+              target="_blank"
+            >
+              <Icon
+                name="simple-icons:bento"
+                class="size-7 sm:size-10"
+              />
             </NuxtLink>
-            <NuxtLink aria-label="stackoverflow" to="https://stackoverflow.com/users/9799292/mathix420?tab=profile" target="_blank">
-              <Icon name="simple-icons:stackoverflow" class="size-7 sm:size-10" />
+            <NuxtLink
+              data-umami-event="Stackoverflow Link"
+              aria-label="stackoverflow"
+              to="https://stackoverflow.com/users/9799292/mathix420?tab=profile"
+              target="_blank"
+            >
+              <Icon
+                name="simple-icons:stackoverflow"
+                class="size-7 sm:size-10"
+              />
             </NuxtLink>
-            <NuxtLink aria-label="matrix" to="https://matrix.to/#/@mathix:beeper.com" target="_blank">
-              <Icon name="simple-icons:matrix" class="size-7 sm:size-10" />
+            <NuxtLink
+              data-umami-event="Matrix Link"
+              aria-label="matrix"
+              to="https://matrix.to/#/@mathix:beeper.com"
+              target="_blank"
+            >
+              <Icon
+                name="simple-icons:matrix"
+                class="size-7 sm:size-10"
+              />
             </NuxtLink>
-            <NuxtLink aria-label="linkedin" to="https://linkedin.com/in/agissing" target="_blank">
-              <Icon name="simple-icons:linkedin" class="size-7 sm:size-10" />
+            <NuxtLink
+              data-umami-event="Linkedin Link"
+              aria-label="linkedin"
+              to="https://linkedin.com/in/agissing"
+              target="_blank"
+            >
+              <Icon
+                name="simple-icons:linkedin"
+                class="size-7 sm:size-10"
+              />
             </NuxtLink>
-            <NuxtLink aria-label="email" to="mailto:agissing@student.42.fr" target="_blank">
-              <Icon name="ic:round-email" class="size-7 sm:size-10" />
+            <NuxtLink
+              data-umami-event="Email Link"
+              aria-label="email"
+              to="mailto:agissing@student.42.fr"
+              target="_blank"
+            >
+              <Icon
+                name="ic:round-email"
+                class="size-7 sm:size-10"
+              />
             </NuxtLink>
           </div>
         </section>
@@ -115,7 +198,10 @@ useSeoMeta({
           </h2>
 
           <div class="flex flex-col gap-10 mt-5 sm:gap-20">
-            <TimelineItem date="2020-2024">
+            <TimelineItem
+              date="2020-2024"
+              name="Peach"
+            >
               <template #title>
                 <span class="line-through">Failed</span> Technical Founder <span class="text-accent">@Peach</span>
               </template>
@@ -124,7 +210,11 @@ useSeoMeta({
               </template>
             </TimelineItem>
 
-            <TimelineItem date="2024" link="https://github.com/mathix420/free-the-web-apps">
+            <TimelineItem
+              date="2024"
+              name="FTWA"
+              link="https://github.com/mathix420/free-the-web-apps"
+            >
               <template #title>
                 Free The Web Apps <CornerArrow class="mb-2" />
               </template>
@@ -132,13 +222,39 @@ useSeoMeta({
                 Unleash the true power of web apps instead of waiting for native Linux apps.
               </template>
               <template #images>
-                <NuxtImg format="webp" height="176" loading="lazy" src="/images/ftwa/1.png" alt="Free The Web Apps" class="h-44 rounded-xl" />
-                <NuxtImg format="webp" height="176" loading="lazy" src="/images/ftwa/2.png" alt="Free The Web Apps" class="h-44 rounded-xl" />
-                <NuxtImg format="webp" height="176" loading="lazy" src="/images/ftwa/3.png" alt="Free The Web Apps" class="h-44 rounded-xl" />
+                <NuxtImg
+                  format="webp"
+                  height="176"
+                  loading="lazy"
+                  src="/images/ftwa/1.png"
+                  alt="Free The Web Apps"
+                  class="h-44 rounded-xl"
+                />
+                <NuxtImg
+                  format="webp"
+                  height="176"
+                  loading="lazy"
+                  src="/images/ftwa/2.png"
+                  alt="Free The Web Apps"
+                  class="h-44 rounded-xl"
+                />
+                <NuxtImg
+                  format="webp"
+                  height="176"
+                  loading="lazy"
+                  src="/images/ftwa/3.png"
+                  alt="Free The Web Apps"
+                  class="h-44 rounded-xl"
+                />
               </template>
             </TimelineItem>
 
-            <TimelineItem date="2023" link="https://github.com/pulsar-inc/blaze">
+            <TimelineItem
+              date="2023"
+              name="Blaze"
+
+              link="https://github.com/pulsar-inc/blaze"
+            >
               <template #title>
                 Blaze <CornerArrow class="mb-2" />
               </template>
@@ -147,7 +263,10 @@ useSeoMeta({
               </template>
             </TimelineItem>
 
-            <TimelineItem date="2023">
+            <TimelineItem
+              name="Synergys"
+              date="2023"
+            >
               <template #title>
                 Solution Architect Freelance <span class="text-accent">@Synergys Technologies</span>
               </template>
@@ -156,7 +275,11 @@ useSeoMeta({
               </template>
             </TimelineItem>
 
-            <TimelineItem date="2023" link="https://vuito.vercel.app/">
+            <TimelineItem
+              date="2023"
+              name="Vuito"
+              link="https://vuito.vercel.app/"
+            >
               <template #title>
                 Vuito <CornerArrow class="mb-2" />
               </template>
@@ -164,13 +287,38 @@ useSeoMeta({
                 Simple, lightweight, isomorphic, template-based validation library.
               </template>
               <template #images>
-                <NuxtImg format="webp" height="176" loading="lazy" src="/images/vuito/1.jpg" alt="Vuito" class="h-44 rounded-xl" />
-                <NuxtImg format="webp" height="176" loading="lazy" src="/images/vuito/2.png" alt="Vuito" class="h-44 rounded-xl" />
-                <NuxtImg format="webp" height="176" loading="lazy" src="/images/vuito/3.png" alt="Vuito" class="h-44 rounded-xl" />
+                <NuxtImg
+                  format="webp"
+                  height="176"
+                  loading="lazy"
+                  src="/images/vuito/1.jpg"
+                  alt="Vuito"
+                  class="h-44 rounded-xl"
+                />
+                <NuxtImg
+                  format="webp"
+                  height="176"
+                  loading="lazy"
+                  src="/images/vuito/2.png"
+                  alt="Vuito"
+                  class="h-44 rounded-xl"
+                />
+                <NuxtImg
+                  format="webp"
+                  height="176"
+                  loading="lazy"
+                  src="/images/vuito/3.png"
+                  alt="Vuito"
+                  class="h-44 rounded-xl"
+                />
               </template>
             </TimelineItem>
 
-            <TimelineItem date="2021" link="https://www.adlin-science.com/">
+            <TimelineItem
+              date="2021"
+              name="Adlin"
+              link="https://www.adlin-science.com/"
+            >
               <template #title>
                 IT Architect Consultant <span class="text-accent">@Adlin-Science</span>
               </template>
@@ -181,7 +329,11 @@ useSeoMeta({
               </template>
             </TimelineItem>
 
-            <TimelineItem date="2020" link="https://mac17.ch/">
+            <TimelineItem
+              date="2020"
+              name="Fermat"
+              link="https://mac17.ch/"
+            >
               <template #title>
                 Solution Architect Freelance <span class="text-accent">@Fermat</span>
               </template>
@@ -190,7 +342,11 @@ useSeoMeta({
               </template>
             </TimelineItem>
 
-            <TimelineItem date="2019" link="https://github.com/mathix420/pylone">
+            <TimelineItem
+              date="2019"
+              name="Pylone"
+              link="https://github.com/mathix420/pylone"
+            >
               <template #title>
                 Pylone <CornerArrow class="mb-2" />
               </template>
@@ -199,7 +355,11 @@ useSeoMeta({
               </template>
             </TimelineItem>
 
-            <TimelineItem date="2019" link="https://dropcontact.com/">
+            <TimelineItem
+              date="2019"
+              name="Dropcontact"
+              link="https://dropcontact.com/"
+            >
               <template #title>
                 Backend Developer <span class="text-accent">@dropcontact</span>
               </template>
@@ -208,14 +368,46 @@ useSeoMeta({
                 architecture on AWS.
               </template>
               <template #images>
-                <NuxtImg format="webp" height="176" loading="lazy" src="/images/stationf/1.jpg" alt="Station F" class="h-44 rounded-xl" />
-                <NuxtImg format="webp" height="176" loading="lazy" src="/images/stationf/3.jpg" alt="Station F" class="h-44 rounded-xl" />
-                <NuxtImg format="webp" height="176" loading="lazy" src="/images/stationf/2.jpg" alt="Station F" class="h-44 rounded-xl" />
-                <NuxtImg format="webp" height="176" loading="lazy" src="/images/stationf/4.jpg" alt="Station F" class="h-44 rounded-xl" />
+                <NuxtImg
+                  format="webp"
+                  height="176"
+                  loading="lazy"
+                  src="/images/stationf/1.jpg"
+                  alt="Station F"
+                  class="h-44 rounded-xl"
+                />
+                <NuxtImg
+                  format="webp"
+                  height="176"
+                  loading="lazy"
+                  src="/images/stationf/3.jpg"
+                  alt="Station F"
+                  class="h-44 rounded-xl"
+                />
+                <NuxtImg
+                  format="webp"
+                  height="176"
+                  loading="lazy"
+                  src="/images/stationf/2.jpg"
+                  alt="Station F"
+                  class="h-44 rounded-xl"
+                />
+                <NuxtImg
+                  format="webp"
+                  height="176"
+                  loading="lazy"
+                  src="/images/stationf/4.jpg"
+                  alt="Station F"
+                  class="h-44 rounded-xl"
+                />
               </template>
             </TimelineItem>
 
-            <TimelineItem date="2018" link="https://42.fr/en/the-program/innovative-learning/">
+            <TimelineItem
+              date="2018"
+              name="42"
+              link="https://42.fr/en/the-program/innovative-learning/"
+            >
               <template #title>
                 Joined <span class="text-accent">@42 School</span>
               </template>
@@ -223,19 +415,48 @@ useSeoMeta({
                 Finished 7 out of 1000 during the selection pool for the Paris campus.
               </template>
               <template #images>
-                <NuxtImg format="webp" height="176" loading="lazy" src="/images/42/1.png" alt="42 School" class="h-44 rounded-xl" />
-                <NuxtImg format="webp" height="176" loading="lazy" src="/images/42/2.jpg" alt="42 School" class="h-44 rounded-xl" />
-                <NuxtImg format="webp" height="176" loading="lazy" src="/images/42/3.jpg" alt="42 School" class="h-44 rounded-xl" />
+                <NuxtImg
+                  format="webp"
+                  height="176"
+                  loading="lazy"
+                  src="/images/42/1.png"
+                  alt="42 School"
+                  class="h-44 rounded-xl"
+                />
+                <NuxtImg
+                  format="webp"
+                  height="176"
+                  loading="lazy"
+                  src="/images/42/2.jpg"
+                  alt="42 School"
+                  class="h-44 rounded-xl"
+                />
+                <NuxtImg
+                  format="webp"
+                  height="176"
+                  loading="lazy"
+                  src="/images/42/3.jpg"
+                  alt="42 School"
+                  class="h-44 rounded-xl"
+                />
               </template>
             </TimelineItem>
 
-            <TimelineItem date="2015-2018">
+            <TimelineItem
+
+              name="HS"
+              date="2015-2018"
+            >
               <template #title>
                 High School
               </template>
             </TimelineItem>
 
-            <TimelineItem date="2015">
+            <TimelineItem
+              name="Sold Software"
+
+              date="2015"
+            >
               <template #title>
                 Sold my first software
               </template>
@@ -244,7 +465,10 @@ useSeoMeta({
               </template>
             </TimelineItem>
 
-            <TimelineItem date="2011">
+            <TimelineItem
+              name="First Software"
+              date="2011"
+            >
               <template #title>
                 My first program
               </template>
@@ -253,7 +477,10 @@ useSeoMeta({
               </template>
             </TimelineItem>
 
-            <TimelineItem date="2000">
+            <TimelineItem
+              name="Born"
+              date="2000"
+            >
               <template #title>
                 I'm born
               </template>
