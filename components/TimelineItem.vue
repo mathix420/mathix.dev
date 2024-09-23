@@ -27,6 +27,7 @@ const slots = useSlots();
     <p
       v-else
       target="_blank"
+      :data-umami-event="`${name} Click`"
       class="text-xl sm:text-2xl"
     >
       <slot name="title" />
