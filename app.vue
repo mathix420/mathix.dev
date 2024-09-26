@@ -225,6 +225,7 @@ useSeoMeta({
                 <NuxtImg
                   format="webp"
                   height="176"
+                  width="313"
                   loading="lazy"
                   src="/images/ftwa/1.png"
                   alt="Free The Web Apps"
@@ -233,6 +234,7 @@ useSeoMeta({
                 <NuxtImg
                   format="webp"
                   height="176"
+                  width="313"
                   loading="lazy"
                   src="/images/ftwa/2.png"
                   alt="Free The Web Apps"
@@ -241,6 +243,7 @@ useSeoMeta({
                 <NuxtImg
                   format="webp"
                   height="176"
+                  width="313"
                   loading="lazy"
                   src="/images/ftwa/3.png"
                   alt="Free The Web Apps"
@@ -290,6 +293,7 @@ useSeoMeta({
                 <NuxtImg
                   format="webp"
                   height="176"
+                  width="282"
                   loading="lazy"
                   src="/images/vuito/1.jpg"
                   alt="Vuito"
@@ -298,6 +302,7 @@ useSeoMeta({
                 <NuxtImg
                   format="webp"
                   height="176"
+                  width="294"
                   loading="lazy"
                   src="/images/vuito/2.png"
                   alt="Vuito"
@@ -306,6 +311,7 @@ useSeoMeta({
                 <NuxtImg
                   format="webp"
                   height="176"
+                  width="282"
                   loading="lazy"
                   src="/images/vuito/3.png"
                   alt="Vuito"
@@ -371,6 +377,7 @@ useSeoMeta({
                 <NuxtImg
                   format="webp"
                   height="176"
+                  width="264"
                   loading="lazy"
                   src="/images/stationf/1.jpg"
                   alt="Station F"
@@ -379,6 +386,7 @@ useSeoMeta({
                 <NuxtImg
                   format="webp"
                   height="176"
+                  width="301"
                   loading="lazy"
                   src="/images/stationf/3.jpg"
                   alt="Station F"
@@ -387,6 +395,7 @@ useSeoMeta({
                 <NuxtImg
                   format="webp"
                   height="176"
+                  width="300"
                   loading="lazy"
                   src="/images/stationf/2.jpg"
                   alt="Station F"
@@ -395,6 +404,7 @@ useSeoMeta({
                 <NuxtImg
                   format="webp"
                   height="176"
+                  width="264"
                   loading="lazy"
                   src="/images/stationf/4.jpg"
                   alt="Station F"
@@ -418,6 +428,7 @@ useSeoMeta({
                 <NuxtImg
                   format="webp"
                   height="176"
+                  width="313"
                   loading="lazy"
                   src="/images/42/1.png"
                   alt="42 School"
@@ -426,6 +437,7 @@ useSeoMeta({
                 <NuxtImg
                   format="webp"
                   height="176"
+                  width="432"
                   loading="lazy"
                   src="/images/42/2.jpg"
                   alt="42 School"
@@ -434,6 +446,7 @@ useSeoMeta({
                 <NuxtImg
                   format="webp"
                   height="176"
+                  width="264"
                   loading="lazy"
                   src="/images/42/3.jpg"
                   alt="42 School"

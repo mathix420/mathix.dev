@@ -9,6 +9,13 @@ export default defineNuxtConfig({
 
   nitro: {
     preset: "vercel-edge",
+    vercel: {
+      config: {
+        images: {
+          formats: ["image/webp", "image/avif"],
+        },
+      },
+    },
   },
 
   devtools: { enabled: true },
@@ -31,6 +38,17 @@ export default defineNuxtConfig({
   //     "Archivo:900",
   //   ],
   // },
+
+  image: {
+    screens: {
+      avatar: 40,
+      avatar2x: 80,
+      normalImage: 301,
+      normalImage2x: 602,
+      biggestImage: 432,
+      biggestImage2x: 864,
+    },
+  },
 
   fonts: {
     provider: "google",
