@@ -30,6 +30,7 @@ export default defineNuxtConfig({
     "@nuxt/fonts",
     // "nuxt-og-image",
     "nuxt-schema-org",
+    "@nuxt/scripts",
   ],
 
   // ogImage: {
