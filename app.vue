@@ -228,7 +228,7 @@ useSeoMeta({
                   loading="lazy"
                   src="/images/ftwa/1.png"
                   alt="Free The Web Apps"
-                  class="h-44 rounded-xl"
+                  class="h-44 rounded-xl w-auto max-w-none object-cover"
                 />
                 <NuxtImg
                   format="webp"
@@ -237,7 +237,7 @@ useSeoMeta({
                   loading="lazy"
                   src="/images/ftwa/2.png"
                   alt="Free The Web Apps"
-                  class="h-44 rounded-xl"
+                  class="h-44 rounded-xl w-auto max-w-none object-cover"
                 />
                 <NuxtImg
                   format="webp"
@@ -246,7 +246,7 @@ useSeoMeta({
                   loading="lazy"
                   src="/images/ftwa/3.png"
                   alt="Free The Web Apps"
-                  class="h-44 rounded-xl"
+                  class="h-44 rounded-xl w-auto max-w-none object-cover"
                 />
               </template>
             </TimelineItem>
@@ -296,7 +296,7 @@ useSeoMeta({
                   loading="lazy"
                   src="/images/vuito/1.jpg"
                   alt="Vuito"
-                  class="h-44 rounded-xl"
+                  class="h-44 rounded-xl w-auto max-w-none object-cover"
                 />
                 <NuxtImg
                   format="webp"
@@ -305,7 +305,7 @@ useSeoMeta({
                   loading="lazy"
                   src="/images/vuito/2.png"
                   alt="Vuito"
-                  class="h-44 rounded-xl"
+                  class="h-44 rounded-xl w-auto max-w-none object-cover"
                 />
                 <NuxtImg
                   format="webp"
@@ -314,7 +314,7 @@ useSeoMeta({
                   loading="lazy"
                   src="/images/vuito/3.png"
                   alt="Vuito"
-                  class="h-44 rounded-xl"
+                  class="h-44 rounded-xl w-auto max-w-none object-cover"
                 />
               </template>
             </TimelineItem>
@@ -380,7 +380,7 @@ useSeoMeta({
                   loading="lazy"
                   src="/images/stationf/1.jpg"
                   alt="Station F"
-                  class="h-44 rounded-xl"
+                  class="h-44 rounded-xl w-auto max-w-none object-cover"
                 />
                 <NuxtImg
                   format="webp"
@@ -389,7 +389,7 @@ useSeoMeta({
                   loading="lazy"
                   src="/images/stationf/3.jpg"
                   alt="Station F"
-                  class="h-44 rounded-xl"
+                  class="h-44 rounded-xl w-auto max-w-none object-cover"
                 />
                 <NuxtImg
                   format="webp"
@@ -398,7 +398,7 @@ useSeoMeta({
                   loading="lazy"
                   src="/images/stationf/2.jpg"
                   alt="Station F"
-                  class="h-44 rounded-xl"
+                  class="h-44 rounded-xl w-auto max-w-none object-cover"
                 />
                 <NuxtImg
                   format="webp"
@@ -407,7 +407,7 @@ useSeoMeta({
                   loading="lazy"
                   src="/images/stationf/4.jpg"
                   alt="Station F"
-                  class="h-44 rounded-xl"
+                  class="h-44 rounded-xl w-auto max-w-none object-cover"
                 />
               </template>
             </TimelineItem>
@@ -431,7 +431,7 @@ useSeoMeta({
                   loading="lazy"
                   src="/images/42/1.png"
                   alt="42 School"
-                  class="h-44 rounded-xl"
+                  class="h-44 rounded-xl w-auto max-w-none object-cover"
                 />
                 <NuxtImg
                   format="webp"
@@ -440,7 +440,7 @@ useSeoMeta({
                   loading="lazy"
                   src="/images/42/2.jpg"
                   alt="42 School"
-                  class="h-44 rounded-xl"
+                  class="h-44 rounded-xl w-auto max-w-none object-cover"
                 />
                 <NuxtImg
                   format="webp"
@@ -449,7 +449,7 @@ useSeoMeta({
                   loading="lazy"
                   src="/images/42/3.jpg"
                   alt="42 School"
-                  class="h-44 rounded-xl"
+                  class="h-44 rounded-xl w-auto max-w-none object-cover"
                 />
               </template>
             </TimelineItem>
