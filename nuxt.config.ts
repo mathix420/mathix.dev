@@ -9,13 +9,6 @@ export default defineNuxtConfig({
 
   nitro: {
     preset: "vercel-static",
-    vercel: {
-      config: {
-        images: {
-          formats: ["image/webp", "image/avif"],
-        },
-      },
-    },
   },
 
   devtools: { enabled: true },
