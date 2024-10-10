@@ -212,7 +212,7 @@ useSeoMeta({
             <TimelineItem
               date="2024"
               name="FTWA"
-              link="https://github.com/mathix420/free-the-web-apps"
+              link="https://ftwa.mathix.dev"
             >
               <template #title>
                 Free The Web Apps <CornerArrow class="mb-2" />
@@ -221,6 +221,15 @@ useSeoMeta({
                 Unleash the true power of web apps instead of waiting for native Linux apps.
               </template>
               <template #images>
+                <NuxtImg
+                  format="webp"
+                  height="176"
+                  width="312"
+                  loading="lazy"
+                  src="/images/ftwa/0.png"
+                  alt="Free The Web Apps"
+                  class="h-44 rounded-xl w-auto max-w-none object-cover"
+                />
                 <NuxtImg
                   format="webp"
                   height="176"
