@@ -202,7 +202,7 @@ useSeoMeta({
               name="Peach"
             >
               <template #title>
-                <span class="line-through">Failed</span> Technical Founder <span class="text-accent">@Peach</span>
+                Technical Founder <span class="text-accent">@Peach</span>
               </template>
               <template #description>
                 Built and scaled streaming platform handling 500k users/week at peak.
