@@ -1,8 +1,15 @@
 <script lang="ts" setup>
+type ImageProps = {
+  src: string;
+  height: number;
+  width: number;
+};
+
 defineProps<{
   name: string;
   date: string;
   link?: string;
+  images?: ImageProps[];
 }>();
 const slots = useSlots();
 </script>
@@ -43,10 +50,20 @@ const slots = useSlots();
 
     <!-- Images -->
     <div
-      v-if="slots.images"
+      v-if="images?.length"
       class="mt-5 flex gap-5 overflow-y-scroll no-scrollbar"
     >
-      <slot name="images" />
+      <NuxtImg
+        v-for="(image, idx) in images"
+        :key="`image-${name}-${idx}`"
+        format="webp"
+        :height="image.height"
+        :width="image.width"
+        loading="lazy"
+        :src="image.src"
+        :alt="name"
+        class="h-44 rounded-xl w-auto max-w-none object-cover"
+      />
     </div>
   </article>
 </template>
