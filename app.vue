@@ -270,7 +270,27 @@ useSeoMeta({
                 Blaze <CornerArrow class="mb-2" />
               </template>
               <template #description>
-                Get structured data out of LLMs.
+                Get structured data out of LLMs. This was done before
+                <NuxtLink
+                  class="underline decoration-dashed decoration-white/75 decoration-1 underline-offset-1 hover:text-white hover:decoration-white"
+                  target="_blank"
+                  external
+                  to="https://github.com/microsoft/TypeChat"
+                >
+                  Microsoft's TypeChat</NuxtLink>, <NuxtLink
+                  class="underline decoration-dashed decoration-white/75 decoration-1 underline-offset-1 hover:text-white hover:decoration-white"
+                  target="_blank"
+                  external
+                  to="https://openai.com/index/introducing-structured-outputs-in-the-api/"
+                >
+                  OpenAI's structured output</NuxtLink>, and before
+                <NuxtLink
+                  class="underline decoration-dashed decoration-white/75 decoration-1 underline-offset-1 hover:text-white hover:decoration-white"
+                  target="_blank"
+                  external
+                  to="https://dottxt-ai.github.io/outlines/latest/"
+                >
+                  dottxt-ai's outline project ($12M funding)</NuxtLink>.
               </template>
             </TimelineItem>
 
