@@ -66,6 +66,7 @@ useSeoMeta({
       />
     </Head>
     <Body>
+      <NuxtLoadingIndicator />
       <NuxtPage />
     </Body>
   </Html>
