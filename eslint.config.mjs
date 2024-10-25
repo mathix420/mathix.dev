@@ -1,12 +1,8 @@
 // @ts-check
-import antfu from "@antfu/eslint-config";
+// @ts-ignore
+import cfg from "@mathix420/nuxt-layer/eslint.config.mjs";
 import withNuxt from "./.nuxt/eslint.config.mjs";
 
 export default withNuxt(
-  antfu({
-    stylistic: {
-      quotes: "double",
-      semi: true,
-    },
-  }),
+  cfg,
 );
