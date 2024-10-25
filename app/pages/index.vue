@@ -34,9 +34,9 @@ const links = [
 </script>
 
 <template>
-  <main class="min-h-dvh max-w-4xl mx-auto px-5 py-10 sm:px-10 sm:py-20 selection:bg-accent/30">
+  <main class="mx-auto min-h-dvh max-w-4xl px-5 py-10 selection:bg-accent/30 sm:px-10 sm:py-20">
     <header>
-      <h1 class="text-2xl sm:text-4xl font-black">
+      <h1 class="text-2xl font-black sm:text-4xl">
         Hi! 👋<br>
         I'm <NuxtImg
           format="webp"
@@ -44,11 +44,11 @@ const links = [
           height="40"
           width="40"
           alt="Arnaud Gissinger"
-          class="size-7 sm:size-10 inline rounded-full object-cover"
+          class="inline size-7 rounded-full object-cover sm:size-10"
         /> Arnaud,
       </h1>
 
-      <p class="pt-10 text-4xl sm:text-6xl font-black">
+      <p class="pt-10 text-4xl font-black sm:text-6xl">
         Most of the time<br>I <span class="text-accent">imagine</span>,
         <span class="text-accent">build</span>, <span class="text-accent">break</span> and <span class="text-accent">fix</span> stuff!
       </p>
@@ -56,7 +56,7 @@ const links = [
 
     <!-- About Me -->
     <section class="pt-14 sm:pt-28">
-      <h2 class="text-2xl sm:text-4xl font-black">
+      <h2 class="text-2xl font-black sm:text-4xl">
         About Me
       </h2>
       <p class="mt-5 text-lg sm:text-xl">
@@ -103,11 +103,11 @@ const links = [
 
     <!-- Timeline -->
     <section class="pt-10 sm:pt-20">
-      <h2 class="text-2xl sm:text-4xl font-black">
+      <h2 class="text-2xl font-black sm:text-4xl">
         Timeline
       </h2>
 
-      <div class="flex flex-col gap-10 mt-5 sm:gap-20">
+      <div class="mt-5 flex flex-col gap-10 sm:gap-20">
         <TimelineItem
           date="2020-2024"
           name="Peach"
@@ -166,20 +166,20 @@ const links = [
           <template #description>
             Get structured data out of LLMs. This was done before
             <NuxtLink
-              class="underline decoration-dashed decoration-white/75 decoration-1 underline-offset-1 hover:text-white hover:decoration-white"
+              class="underline decoration-white/75 decoration-dashed decoration-1 underline-offset-1 hover:text-white hover:decoration-white"
               target="_blank"
               external
               to="https://github.com/microsoft/TypeChat"
             >
               Microsoft's TypeChat</NuxtLink>, <NuxtLink
-              class="underline decoration-dashed decoration-white/75 decoration-1 underline-offset-1 hover:text-white hover:decoration-white"
+              class="underline decoration-white/75 decoration-dashed decoration-1 underline-offset-1 hover:text-white hover:decoration-white"
               target="_blank"
               external
               to="https://openai.com/index/introducing-structured-outputs-in-the-api/"
             >
               OpenAI's structured output</NuxtLink>, and before
             <NuxtLink
-              class="underline decoration-dashed decoration-white/75 decoration-1 underline-offset-1 hover:text-white hover:decoration-white"
+              class="underline decoration-white/75 decoration-dashed decoration-1 underline-offset-1 hover:text-white hover:decoration-white"
               target="_blank"
               external
               to="https://dottxt-ai.github.io/outlines/latest/"

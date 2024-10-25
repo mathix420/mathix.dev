@@ -51,7 +51,7 @@ const slots = useSlots();
     <!-- Images -->
     <div
       v-if="images?.length"
-      class="mt-5 flex gap-5 overflow-y-scroll no-scrollbar"
+      class="no-scrollbar mt-5 flex gap-5 overflow-y-scroll"
     >
       <NuxtImg
         v-for="(image, idx) in images"
@@ -62,7 +62,7 @@ const slots = useSlots();
         loading="lazy"
         :src="image.src"
         :alt="name"
-        class="h-44 rounded-xl w-auto max-w-none object-cover"
+        class="h-44 w-auto max-w-none rounded-xl object-cover"
       />
     </div>
   </article>
