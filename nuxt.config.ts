@@ -13,6 +13,7 @@ export default defineNuxtConfig({
     description: "Arnaud Gissinger is a French Software Architect, ex-42 and ex-founder of Peach. Passionate about Open Source, Web Development, Design, and Entrepreneurship. He did his first program at 10, sold his first software at 15, and launched his first startup at 19.",
   },
 
+  future: { compatibilityVersion: 4 },
   compatibilityDate: "2024-04-03",
 
   nitro: {
@@ -37,14 +38,12 @@ export default defineNuxtConfig({
     },
   },
 
-  // ogImage: {
-  //   fonts: [
-  //     "Archivo:400",
-  //     "Archivo:900",
-  //   ],
-  // },
   ogImage: {
-    enabled: false,
+    zeroRuntime: true,
+    fonts: [
+      "Archivo:400",
+      "Archivo:900",
+    ],
   },
 
   sitemap: {

@@ -5,7 +5,7 @@ const smallDescription = "Arnaud Gissinger is a French Passionate Software Archi
 const url = useSiteConfig().url;
 
 // Disabled because of bundle size in Vercel edge
-// defineOgImageComponent("Mathix");
+defineOgImageComponent("Mathix");
 
 useSchemaOrg([
   definePerson({
@@ -35,7 +35,7 @@ useScript({
 useSeoMeta({
   title,
   description,
-  ogImage: `${url}og.png`,
+  // ogImage: `${url}og.png`,
   ogTitle: title,
   ogDescription: smallDescription,
   ogUrl: url,
