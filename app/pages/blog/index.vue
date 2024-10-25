@@ -1,3 +1,10 @@
+<script setup lang="ts">
+useSeoMeta({
+  title: "Blog",
+  description: "Blog posts by Arnaud Gissinger.",
+});
+</script>
+
 <template>
   <div>
     <AppHeader />

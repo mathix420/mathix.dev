@@ -8,11 +8,14 @@
 
       <ContentDoc
         v-slot="{ doc }"
-        class="break-words"
       >
         <OgImage
           :props="{ emojis: doc.emojis }"
           component="OgImageBlog"
+        />
+        <ContentRenderer
+          class="break-words"
+          :value="doc"
         />
       </ContentDoc>
     </main>
