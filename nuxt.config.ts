@@ -12,6 +12,7 @@ export default defineNuxtConfig({
   },
 
   routeRules: {
+    "/": { prerender: true },
     "/blog/**": { prerender: true },
   },
 
@@ -19,7 +20,7 @@ export default defineNuxtConfig({
   compatibilityDate: "2024-04-03",
 
   nitro: {
-    preset: "vercel-static",
+    preset: "vercel",
   },
 
   fonts: {
