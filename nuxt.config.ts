@@ -33,6 +33,9 @@ export default defineNuxtConfig({
   },
 
   image: {
+    provider: "ipx",
+    quality: 100,
+    formats: ["webp", "avif"],
     screens: {
       avatar: 40,
       avatar2x: 80,
