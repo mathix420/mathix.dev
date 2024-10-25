@@ -1,9 +1,7 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   extends: ["@mathix420/nuxt-layer"],
-  modules: [
-    "@nuxtjs/mdc",
-  ],
+  modules: [],
 
   devtools: { enabled: true },
 
@@ -11,6 +9,10 @@ export default defineNuxtConfig({
     url: "https://mathix.dev/",
     name: "Arnaud Gissinger",
     description: "Arnaud Gissinger is a French Software Architect, ex-42 and ex-founder of Peach. Passionate about Open Source, Web Development, Design, and Entrepreneurship. He did his first program at 10, sold his first software at 15, and launched his first startup at 19.",
+  },
+
+  routeRules: {
+    "/blog/**": { prerender: true },
   },
 
   future: { compatibilityVersion: 4 },
@@ -44,9 +46,5 @@ export default defineNuxtConfig({
       "Archivo:400",
       "Archivo:900",
     ],
-  },
-
-  sitemap: {
-    enabled: false,
-  },
+  }
 });
