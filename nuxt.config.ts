@@ -1,9 +1,7 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   extends: ["@mathix420/nuxt-layer"],
-  modules: [
-    "@nuxtjs/mdc",
-  ],
+  modules: [],
 
   devtools: { enabled: true },
 
