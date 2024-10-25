@@ -21,6 +21,10 @@ export default defineNuxtConfig({
 
   nitro: {
     preset: "vercel",
+    prerender: {
+      // enabled by default with nuxt generate, not required
+      crawlLinks: true,
+    }
   },
 
   fonts: {
