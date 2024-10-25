@@ -12,17 +12,15 @@ export default defineNuxtConfig({
   },
 
   routeRules: {
-    "/": { static: true },
-    "/blog/**": { static: true },
+    "/": { pretender: true },
+    "/blog/**": { prerender: true },
   },
 
   future: { compatibilityVersion: 4 },
   compatibilityDate: "2024-04-03",
 
   nitro: {
-    preset: "vercel",
     prerender: {
-      // enabled by default with nuxt generate, not required
       crawlLinks: true,
     }
   },
@@ -51,9 +49,5 @@ export default defineNuxtConfig({
       "Archivo:400",
       "Archivo:900",
     ],
-  },
-
-  sitemap: {
-    enabled: false,
-  },
+  }
 });
