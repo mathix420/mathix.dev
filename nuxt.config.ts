@@ -12,8 +12,8 @@ export default defineNuxtConfig({
   },
 
   routeRules: {
-    "/": { prerender: true },
-    "/blog/**": { prerender: true },
+    "/": { static: true },
+    "/blog/**": { static: true },
   },
 
   future: { compatibilityVersion: 4 },
