@@ -4,7 +4,6 @@ const description = "Arnaud Gissinger is a French Software Architect, ex-42 and 
 const smallDescription = "Arnaud Gissinger is a French Passionate Software Architect, previously 42 Student and founder.";
 const url = useSiteConfig().url;
 
-// Disabled because of bundle size in Vercel edge
 defineOgImageComponent("Mathix");
 
 useSchemaOrg([
