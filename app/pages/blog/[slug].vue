@@ -6,7 +6,15 @@
         🚨 WIP, come back later if you want polished blog posts and nicer UI!
       </p>
 
-      <ContentDoc class="break-words" />
+      <ContentDoc
+        v-slot="{ doc }"
+        class="break-words"
+      >
+        <OgImage
+          :props="{ emojis: doc.emojis }"
+          component="OgImageBlog"
+        />
+      </ContentDoc>
     </main>
   </div>
 </template>
