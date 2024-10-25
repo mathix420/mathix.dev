@@ -1,37 +1,30 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  compatibilityDate: "2024-04-03",
+  extends: ["@mathix420/nuxt-layer"],
+  modules: [
+    "@nuxtjs/mdc",
+  ],
+
+  devtools: { enabled: true },
 
   site: {
     url: "https://mathix.dev/",
     name: "Arnaud Gissinger",
+    description: "Arnaud Gissinger is a French Software Architect, ex-42 and ex-founder of Peach. Passionate about Open Source, Web Development, Design, and Entrepreneurship. He did his first program at 10, sold his first software at 15, and launched his first startup at 19.",
   },
+
+  compatibilityDate: "2024-04-03",
 
   nitro: {
     preset: "vercel-static",
   },
 
-  devtools: { enabled: true },
-  modules: [
-    "@nuxtjs/tailwindcss",
-    "@nuxt/image",
-    "@nuxt/eslint",
-    "@nuxt/content",
-    "@nuxt/icon",
-    "@nuxtjs/mdc",
-    "nuxt-headlessui",
-    "@nuxt/fonts",
-    // "nuxt-og-image",
-    "nuxt-schema-org",
-    "@nuxt/scripts",
-  ],
-
-  // ogImage: {
-  //   fonts: [
-  //     "Archivo:400",
-  //     "Archivo:900",
-  //   ],
-  // },
+  fonts: {
+    provider: "google",
+    families: [
+      { name: "Archivo" },
+    ],
+  },
 
   image: {
     screens: {
@@ -44,19 +37,17 @@ export default defineNuxtConfig({
     },
   },
 
-  fonts: {
-    provider: "google",
-    families: [
-      { name: "Archivo" },
-    ],
+  // ogImage: {
+  //   fonts: [
+  //     "Archivo:400",
+  //     "Archivo:900",
+  //   ],
+  // },
+  ogImage: {
+    enabled: false,
   },
 
-  eslint: {
-    config: {
-      stylistic: {
-        quotes: "double",
-        semi: true,
-      },
-    },
+  sitemap: {
+    enabled: false,
   },
 });
