@@ -35,8 +35,8 @@ export default defineNuxtConfig({
   icon: {
     mode: "svg",
     provider: "server",
+    // list of icons to include in the client bundle
     clientBundle: {
-      // list of icons to include in the client bundle
       icons: [
         "simple-icons:github",
         "simple-icons:bento",
