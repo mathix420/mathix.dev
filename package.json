@@ -12,6 +12,7 @@
   },
   "dependencies": {
     "@mathix420/nuxt-layer": "^1.3.0",
+    "@nuxthub/core": "^0.8.1",
     "nuxt": "^3.13.2",
     "vue": "latest",
     "vue-router": "latest"

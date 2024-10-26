@@ -1,7 +1,7 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   extends: ["@mathix420/nuxt-layer"],
-  modules: [],
+  modules: ["@nuxthub/core"],
 
   devtools: { enabled: true },
 
@@ -12,7 +12,8 @@ export default defineNuxtConfig({
   },
 
   routeRules: {
-    "/": { pretender: true },
+    "/": { prerender: true },
+    "/blog": { prerender: true },
     "/blog/**": { prerender: true },
   },
 
