@@ -21,15 +21,6 @@ export default defineNuxtConfig({
     }
   },
 
-  icon: {
-    clientBundle: {
-      // scan all components in the project and include icons 
-      scan: true,
-      // guard for uncompressed bundle size, will fail the build if exceeds
-      sizeLimitKb: 256,
-    },
-  },
-
   fonts: {
     provider: "google",
     families: [

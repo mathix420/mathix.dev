@@ -94,7 +94,6 @@ const links = [
           external
         >
           <Icon
-            mode="svg"
             :name="link.icon"
             class="size-7 sm:size-9"
           />
