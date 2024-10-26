@@ -30,9 +30,7 @@ export default defineNuxtConfig({
 
   icon: {
     mode: "svg",
-    serverBundle: {
-      remote: "unpkg",
-    },
+    provider: "server",
     clientBundle: {
       // list of icons to include in the client bundle
       icons: [
