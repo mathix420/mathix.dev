@@ -44,9 +44,12 @@ export default defineNuxtConfig({
   },
 
   image: {
-    provider: "ipxStatic",
+    provider: "cloudflare",
     quality: 100,
     formats: ["webp", "avif"],
+    cloudflare: {
+      baseURL: "https://mathix.dev",
+    },
   },
 
   ogImage: {
