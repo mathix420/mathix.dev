@@ -29,6 +29,7 @@ export default defineNuxtConfig({
   },
 
   icon: {
+    mode: "svg",
     clientBundle: {
       // list of icons to include in the client bundle
       icons: [
@@ -43,17 +44,9 @@ export default defineNuxtConfig({
   },
 
   image: {
-    provider: "ipx",
+    provider: "ipxStatic",
     quality: 100,
     formats: ["webp", "avif"],
-    screens: {
-      avatar: 40,
-      avatar2x: 80,
-      normalImage: 301,
-      normalImage2x: 602,
-      biggestImage: 432,
-      biggestImage2x: 864,
-    },
   },
 
   ogImage: {
