@@ -30,6 +30,9 @@ export default defineNuxtConfig({
 
   icon: {
     mode: "svg",
+    serverBundle: {
+      remote: "unpkg",
+    },
     clientBundle: {
       // list of icons to include in the client bundle
       icons: [
@@ -46,7 +49,7 @@ export default defineNuxtConfig({
   image: {
     provider: "cloudflare",
     quality: 100,
-    formats: ["webp", "avif"],
+    formats: ["avif", "webp"],
     cloudflare: {
       baseURL: "https://mathix.dev",
     },
