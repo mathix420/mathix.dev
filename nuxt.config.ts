@@ -17,8 +17,8 @@ export default defineNuxtConfig({
   nitro: {
     prerender: {
       crawlLinks: true,
-      routes: ['/', '/blog'],
-    }
+      routes: ["/", "/blog"],
+    },
   },
 
   fonts: {
@@ -26,6 +26,20 @@ export default defineNuxtConfig({
     families: [
       { name: "Archivo" },
     ],
+  },
+
+  icon: {
+    clientBundle: {
+      // list of icons to include in the client bundle
+      icons: [
+        "simple-icons:github",
+        "simple-icons:bento",
+        "simple-icons:stackoverflow",
+        "simple-icons:matrix",
+        "simple-icons:linkedin",
+        "ic:round-email",
+      ],
+    },
   },
 
   image: {
@@ -48,5 +62,5 @@ export default defineNuxtConfig({
       "Archivo:400",
       "Archivo:900",
     ],
-  }
+  },
 });
