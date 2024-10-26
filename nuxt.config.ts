@@ -1,7 +1,7 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   extends: ["@mathix420/nuxt-layer"],
-  modules: [],
+  modules: ["@nuxthub/core"],
 
   devtools: { enabled: true },
 
@@ -19,7 +19,10 @@ export default defineNuxtConfig({
   compatibilityDate: "2024-04-03",
 
   nitro: {
-    preset: "vercel-static",
+    prerender: {
+      crawlLinks: true,
+      routes: ["/", "/blog"],
+    },
   },
 
   fonts: {
@@ -29,14 +32,28 @@ export default defineNuxtConfig({
     ],
   },
 
+  icon: {
+    mode: "svg",
+    provider: "server",
+    clientBundle: {
+      // list of icons to include in the client bundle
+      icons: [
+        "simple-icons:github",
+        "simple-icons:bento",
+        "simple-icons:stackoverflow",
+        "simple-icons:matrix",
+        "simple-icons:linkedin",
+        "ic:round-email",
+      ],
+    },
+  },
+
   image: {
-    screens: {
-      avatar: 40,
-      avatar2x: 80,
-      normalImage: 301,
-      normalImage2x: 602,
-      biggestImage: 432,
-      biggestImage2x: 864,
+    provider: "cloudflare",
+    quality: 100,
+    formats: ["avif", "webp"],
+    cloudflare: {
+      baseURL: "https://mathix.dev",
     },
   },
 
@@ -46,5 +63,5 @@ export default defineNuxtConfig({
       "Archivo:400",
       "Archivo:900",
     ],
-  }
+  },
 });
