@@ -12,6 +12,7 @@ export default defineNuxtConfig({
   },
 
   routeRules: {
+    "/cv/**": { robots: { indexable: false } },
     "/blog/**": { prerender: true },
   },
 
