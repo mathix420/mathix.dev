@@ -2,7 +2,7 @@
 withDefaults(defineProps<{
   emojis?: string[];
 }>(), {
-  emojis: () => ["fluent-emoji:briefcase", "fluent-emoji:globe-showing-americas"],
+  emojis: () => ["🤓"],
 });
 </script>
 
@@ -96,10 +96,7 @@ withDefaults(defineProps<{
       :key="uid"
       class="text-center text-[200px]"
     >
-      <Icon
-        :name="emoji"
-        mode="svg"
-      />
+      {{ emoji }}
     </p>
     <p class="absolute bottom-0 right-5 rounded-xl bg-charcoal px-3 py-1 text-right text-3xl">
       Blog / mathix.dev

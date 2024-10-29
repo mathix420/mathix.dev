@@ -10,6 +10,7 @@
         v-slot="{ doc }"
       >
         <OgImage
+          emojis="fluent-emoji"
           :props="{ emojis: doc.emojis }"
           component="OgImageBlog"
         />
