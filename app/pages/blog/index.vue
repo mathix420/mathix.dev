@@ -14,15 +14,16 @@ useSeoMeta({
         path="/blog"
       >
         <article
-          v-for="post in list"
+          v-for="(post, uid) in list"
           :key="post._path"
           class="mx-auto flex max-w-2xl items-center justify-between gap-2"
         >
           <NuxtImg
+            :loading="uid < 5 ? 'eager' : 'lazy'"
             :src="`/__og-image__/static${post.loc}/og.png`"
             height="160"
             width="160"
-            :modifiers="{ fit: 'cover' }"
+            fit="cover"
             :alt="post.title"
             class="hidden size-40 rounded-lg bg-white/10 object-cover sm:block"
           />
