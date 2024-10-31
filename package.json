@@ -21,6 +21,7 @@
     "@iconify-json/fluent-emoji": "^1.2.1",
     "@iconify-json/ic": "^1.2.1",
     "@iconify-json/simple-icons": "^1.2.10",
+    "@nuxthq/studio": "^2.2.1",
     "typescript": "^5.6.3"
   },
   "trustedDependencies": [

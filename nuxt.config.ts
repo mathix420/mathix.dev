@@ -1,7 +1,17 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   extends: ["@mathix420/nuxt-layer"],
-  modules: ["@nuxthub/core"],
+  modules: [
+    "@nuxthub/core",
+    "@nuxthq/studio",
+  ],
+
+  $production: {
+    image: {
+      provider: "cloudflare",
+      domains: ["mathix.dev"],
+    },
+  },
 
   devtools: { enabled: true },
 
@@ -50,7 +60,6 @@ export default defineNuxtConfig({
   },
 
   image: {
-    provider: "cloudflare",
     quality: 100,
     formats: ["avif", "webp"],
     cloudflare: {
