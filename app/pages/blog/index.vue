@@ -16,31 +16,32 @@ useSeoMeta({
         <article
           v-for="(post, uid) in list"
           :key="post._path"
-          class="mx-auto flex max-w-2xl items-center justify-between gap-2"
+          class="group mx-auto flex max-w-2xl items-center justify-between gap-6"
         >
           <NuxtImg
+            provider="cloudflare"
             :loading="uid < 5 ? 'eager' : 'lazy'"
             :src="`/__og-image__/static${post.loc}/og.png`"
             height="160"
             width="160"
             fit="cover"
             :alt="post.title"
-            class="hidden size-40 rounded-lg bg-white/10 object-cover sm:block"
+            class="size-32 rounded-3xl bg-white/10 object-cover shadow-[0_7px_25px_-6px_#ebcef4bb] transition-all duration-500 group-hover:shadow-[0_0_25px_-6px_#ebcef4] sm:size-40 sm:shadow-[0_15px_50px_-12px_#ebcef4bb] sm:group-hover:shadow-[0_0_50px_-12px_#ebcef4]"
           />
           <div>
-            <div class="flex items-center gap-x-4 text-xs">
+            <div class="hidden items-center gap-x-4 text-xs sm:flex">
               <time
                 :datetime="post.datetime"
               >{{ post.date }}</time>
             </div>
             <div class="group relative">
-              <h3 class="mt-3 text-lg font-semibold leading-6 ">
+              <h3 class="mt-3 text-lg font-semibold leading-6">
                 <NuxtLink :to="post.loc">
                   <span class="absolute inset-0" />
                   {{ post.title }}
                 </NuxtLink>
               </h3>
-              <p class="mt-5 line-clamp-3 text-sm leading-6 ">
+              <p class="mt-5 line-clamp-3 text-sm leading-6">
                 {{ post.description }}
               </p>
             </div>
