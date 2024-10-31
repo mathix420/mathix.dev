@@ -19,9 +19,10 @@ useSeoMeta({
           class="mx-auto flex max-w-2xl items-center justify-between gap-2"
         >
           <NuxtImg
-            :src="`/__og-image__/image${post.loc}/og.png`"
+            :src="`/__og-image__/static${post.loc}/og.png`"
             height="160"
             width="160"
+            :modifiers="{ fit: 'cover' }"
             :alt="post.title"
             class="hidden size-40 rounded-lg bg-white/10 object-cover sm:block"
           />
