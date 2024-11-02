@@ -21,10 +21,10 @@
           Blog
         </NuxtLink>
         <NuxtLink
-          to="/"
+          to="/manifesto"
           class="ml-4 text-white hover:text-gray-300 dark:text-gray-100 dark:hover:text-gray-200"
         >
-          Contact
+          Manifesto
         </NuxtLink>
       </nav>
     </div>
