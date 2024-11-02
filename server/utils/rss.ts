@@ -14,7 +14,7 @@ export async function generateBlogFeed(event: H3Event) {
     id: settings.siteUrl,
     link: `${settings.siteUrl}/blog`,
     language: "en-US",
-    image: `${settings.siteUrl}/__og-image__/image/og.png`,
+    image: `${settings.siteUrl}/android-chrome-192x192.png`,
     favicon: `${settings.siteUrl}/favicon.ico`,
     copyright: `CC BY-NC-ND 4.0 - Arnaud Gissinger`,
     feedLinks: {
