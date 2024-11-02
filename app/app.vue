@@ -1,24 +1,15 @@
 <script setup lang="ts">
-const title = "Arnaud Gissinger";
-const description = "Arnaud Gissinger is a French Software Architect, ex-42 and ex-founder of Peach. Passionate about Open Source, Web Development, Design, and Entrepreneurship. He did his first program at 10, sold his first software at 15, and launched his first startup at 19.";
-const smallDescription = "Arnaud Gissinger is a French Passionate Software Architect, previously 42 Student and founder.";
+import settings from "~~/settings";
+
 const url = useSiteConfig().url;
 
 defineOgImageComponent("Mathix");
 
 useSchemaOrg([
   definePerson({
-    name: title,
+    name: settings.name,
     image: "/android-chrome-512x512.png",
-    sameAs: [
-      "https://github.com/mathix420",
-      "https://www.linkedin.com/in/agissing/",
-      "https://bento.me/agissing",
-      "https://www.polywork.com/agissing/",
-      "https://posts.cv/mathix",
-      "https://read.cv/mathix",
-      "https://stackoverflow.com/users/9799292/mathix420",
-    ],
+    sameAs: settings.sameAs,
   }),
 ]);
 
@@ -30,13 +21,13 @@ useScript({
 }, { trigger: onMounted });
 
 useSeoMeta({
-  title,
-  description,
-  ogTitle: title,
-  ogDescription: smallDescription,
+  title: settings.name,
+  description: settings.description,
+  ogTitle: settings.name,
+  ogDescription: settings.smallDescription,
   ogUrl: url,
-  twitterTitle: title,
-  twitterDescription: description,
+  twitterTitle: settings.name,
+  twitterDescription: settings.description,
   twitterCard: "summary_large_image",
 });
 </script>
