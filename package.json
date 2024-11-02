@@ -22,6 +22,7 @@
     "@iconify-json/ic": "^1.2.1",
     "@iconify-json/simple-icons": "^1.2.10",
     "@nuxthq/studio": "^2.2.1",
+    "nuxt-feedme": "^1.0.0",
     "typescript": "^5.6.3"
   },
   "trustedDependencies": [

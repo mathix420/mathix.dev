@@ -1,9 +1,23 @@
+const feedConfig = {
+  defaults: {
+    author: {
+      name: "Arnaud Gissinger",
+      link: "https://mathix.dev/",
+    },
+    id: "https://mathix.dev/blog",
+    title: "Arnaud Gissinger's Blog",
+    description: "Just another tech blog from another dev, or maybe not? userId:68304114010265600",
+    language: "en-US",
+  },
+};
+
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   extends: ["@mathix420/nuxt-layer"],
   modules: [
     "@nuxthub/core",
     "@nuxthq/studio",
+    "nuxt-feedme",
   ],
 
   $production: {
@@ -32,7 +46,29 @@ export default defineNuxtConfig({
   nitro: {
     prerender: {
       crawlLinks: true,
-      routes: ["/", "/blog"],
+      routes: ["/", "/blog", "/feed.atom", "/feed.xml"],
+    },
+  },
+
+  feedme: {
+    feeds: {
+      "/feed.atom": { revisit: "6h", feed: feedConfig, type: "atom1", content: true },
+      "/feed.xml": { revisit: "6h", feed: feedConfig, type: "atom1", content: true },
+    },
+    content: {
+      item: {
+        templateRoots: [true, "feedme"],
+        mapping: [
+          // Third item is optional mapping function
+          ["date", "modified", value => value ? new Date(value) : value],
+          // When mapping function result is undefined - next variant applied
+          ["date", "created", value => value ? new Date(value) : value],
+          // Until the real one value will be set
+          ["date", "", () => new Date()],
+          // By default mapping is x => x
+          ["link", "loc", v => `https://mathix.dev${v}`],
+        ],
+      },
     },
   },
 
