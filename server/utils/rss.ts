@@ -26,7 +26,7 @@ export async function generateBlogFeed(event: H3Event) {
     if (!post.loc) continue;
 
     // this will return the SSR content of the post
-    const content = await $fetch<string>(post.loc!);
+    const content = await $fetch<string>(`${settings.siteUrl}${post.loc}`);
     let $ = cheerio.load(content);
     const prose = $("div.break-words[data-content-id]").html();
 
