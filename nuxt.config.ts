@@ -6,7 +6,7 @@ const feedConfig = {
     },
     id: "https://mathix.dev/blog",
     title: "Arnaud Gissinger's Blog",
-    description: "Just another tech blog from another dev, or maybe not? userId:68304114010265600",
+    description: "Just another tech blog from another dev, or maybe not? feedId:75543803563887616+userId:68304114010265600",
     language: "en-US",
   },
 };
