@@ -38,6 +38,10 @@ useSeoMeta({
     lang="en-US"
   >
     <Head>
+      <Meta
+        name="monetization"
+        content="$ilp.uphold.com/7nnJLnFyr8hn"
+      />
       <Link
         rel="apple-touch-icon"
         sizes="180x180"
