@@ -15,20 +15,20 @@ export async function generateBlogFeed(event: H3Event) {
     image: `${settings.siteUrl}/__og-image__/image/og.png`,
     copyright: `CC BY-NC-ND 4.0 - Arnaud Gissinger`,
     feedLinks: {
-      atom: `${settings.siteUrl}/feed.atom`,
       rss: `${settings.siteUrl}/feed.xml`,
+      atom: `${settings.siteUrl}/feed.atom`,
     },
   });
 
-  const posts = await serverQueryContent(event, "blog").find();
+  const posts = await serverQueryContent(event, "blog").sort({ datePublished: -1 }).find();
 
   for (const post of posts) {
     if (!post.loc) continue;
 
     // this will return the SSR content of the post
-    const content = await $fetch<string>(`${settings.siteUrl}${post.loc}`);
+    const content = await $fetch<string>(post.loc);
     let $ = cheerio.load(content);
-    const prose = $("div.break-words[data-content-id]").html();
+    const prose = $(".prose").html();
 
     $ = cheerio.load(prose!);
 
