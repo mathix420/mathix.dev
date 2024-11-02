@@ -1,5 +1,5 @@
 <template>
-  <main class="prose xl:prose-xl prose-invert prose-a:no-underline prose-a:text-accent prose-headings:text-white prose-a:prose-headings:text-white">
+  <main class="prose xl:prose-xl prose-invert prose-a:no-underline prose-a:text-accent prose-pre:scrollbar-hide prose-headings:text-white prose-a:prose-headings:text-white">
     <ContentDoc
       v-slot="{ doc }"
     >
