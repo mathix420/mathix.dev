@@ -34,7 +34,7 @@ export default defineNuxtConfig({
   nitro: {
     prerender: {
       crawlLinks: true,
-      routes: ["/", "/blog", "/feed.atom", "/feed.xml"],
+      routes: ["/", "/blog"],
     },
   },
 
