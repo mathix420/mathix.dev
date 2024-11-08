@@ -10,6 +10,7 @@ export default {
   sameAs: [
     "https://github.com/mathix420",
     "https://www.linkedin.com/in/agissing/",
+    "https://bsky.app/profile/mathix.dev",
     "https://bento.me/agissing",
     "https://www.polywork.com/agissing/",
     "https://posts.cv/mathix",

@@ -11,6 +11,11 @@ const links = [
     icon: "simple-icons:bento",
   },
   {
+    name: "Bluesky",
+    link: "https://bsky.app/profile/mathix.dev",
+    icon: "simple-icons:bluesky",
+  },
+  {
     name: "Stackoverflow",
     link: "https://stackoverflow.com/users/9799292/mathix420?tab=profile",
     icon: "simple-icons:stackoverflow",
@@ -28,7 +33,7 @@ const links = [
   {
     name: "Email",
     link: "mailto:agissing@student.42.fr",
-    icon: "ic:round-email",
+    icon: "simple-icons:gmail",
   },
 ];
 </script>
@@ -83,7 +88,7 @@ const links = [
 
     <!-- Links -->
     <section class="py-5 sm:pt-20">
-      <div class="mt-5 flex justify-evenly">
+      <div class="mt-5 flex flex-wrap justify-evenly gap-1">
         <NuxtLink
           v-for="link in links"
           :key="link.name"
@@ -95,7 +100,7 @@ const links = [
         >
           <Icon
             :name="link.icon"
-            class="size-7 sm:size-9"
+            class="size-7 sm:size-8"
           />
         </NuxtLink>
       </div>
@@ -116,7 +121,7 @@ const links = [
             Technical Founder <span class="text-accent">@Peach</span>
           </template>
           <template #description>
-            Built and scaled streaming platform handling 500k users/week at peak.
+            Built and scaled streaming platform handling 500k MAU at peak.
           </template>
         </TimelineItem>
 

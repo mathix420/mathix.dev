@@ -56,7 +56,7 @@ export default defineNuxtConfig({
         "simple-icons:stackoverflow",
         "simple-icons:matrix",
         "simple-icons:linkedin",
-        "ic:round-email",
+        "simple-icons:gmail",
       ],
     },
   },
