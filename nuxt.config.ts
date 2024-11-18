@@ -53,6 +53,7 @@ export default defineNuxtConfig({
       icons: [
         "simple-icons:github",
         "simple-icons:bento",
+        "simple-icons:bluesky",
         "simple-icons:stackoverflow",
         "simple-icons:matrix",
         "simple-icons:linkedin",
