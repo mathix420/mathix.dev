@@ -114,6 +114,19 @@ const links = [
 
       <div class="mt-5 flex flex-col gap-10 sm:gap-20">
         <TimelineItem
+          link="https://contrat-ia.com"
+          date="2024"
+          name="Peach"
+        >
+          <template #title>
+            Building <span class="text-accent">@Contrat-IA</span>
+          </template>
+          <template #description>
+            A tool to write contracts in seconds not days. You can create contracts using only your voice.
+          </template>
+        </TimelineItem>
+
+        <TimelineItem
           date="2020-2024"
           name="Peach"
         >
