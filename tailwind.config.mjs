@@ -10,6 +10,10 @@ export default {
         charcoal: "#0d0d0d",
         accent: "#00c9ff",
       },
+      spacing: {
+        "kb-height": "env(keyboard-inset-height, 0)",
+        "kb-width": "env(keyboard-inset-width, 0)",
+      },
     },
   },
 };

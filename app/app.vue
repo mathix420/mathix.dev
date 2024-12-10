@@ -21,7 +21,6 @@ useScript({
 }, { trigger: onMounted });
 
 useSeoMeta({
-  title: settings.name,
   description: settings.description,
   ogTitle: settings.name,
   ogDescription: settings.smallDescription,
@@ -62,7 +61,9 @@ useSeoMeta({
     </Head>
     <Body>
       <NuxtLoadingIndicator />
-      <NuxtPage />
+      <NuxtLayout>
+        <NuxtPage />
+      </NuxtLayout>
     </Body>
   </Html>
 </template>
