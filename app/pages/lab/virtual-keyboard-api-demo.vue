@@ -49,6 +49,13 @@ onMounted(() => {
       class="w-full rounded-md border-none text-black"
       type="text"
     >
+    <NuxtLink
+      to="/blog/fix-html-elements-on-top-of-the-ios-keyboard-using-html-css-js"
+      class="mt-2 flex items-center gap-1 underline"
+    >
+      <Icon name="lucide:arrow-right" />
+      Check the Blog Article
+    </NuxtLink>
 
     <pre class="my-10 overflow-y-auto">
 const { isIos } = useDevice();
@@ -85,7 +92,11 @@ onMounted(() => {
       document.removeEventListener("focusout", fixPosition);
     });
   }
-});</pre>
+});
+
+&lt;div ref&equals;&quot;dock&quot; style&equals;&quot;bottom&colon; env&lpar;keyboard-inset-height&comma; 0&rpar;&semi;&quot; class&equals;&quot;fixed inset-x-0&quot;&gt;
+  Stick to the damn bottom
+&lt;&sol;div&gt;</pre>
 
     <div
       ref="dock"
