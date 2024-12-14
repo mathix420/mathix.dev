@@ -14,6 +14,7 @@
     "@mathix420/nuxt-layer": "^1.4.0",
     "@nuxthub/core": "^0.8.4",
     "@nuxtjs/device": "3.2.4",
+    "@vueuse/motion": "^2.2.6",
     "nuxt": "^3.13.2",
     "vue": "latest",
     "vue-router": "latest"

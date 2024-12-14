@@ -3,7 +3,7 @@ import settings from "./settings";
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   extends: ["@mathix420/nuxt-layer"],
-  modules: ["@nuxthub/core", "@nuxthq/studio", "@nuxtjs/device"],
+  modules: ["@nuxthub/core", "@nuxthq/studio", "@nuxtjs/device", "@vueuse/motion/nuxt"],
 
   $production: {
     image: {
