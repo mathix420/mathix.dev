@@ -25,6 +25,8 @@
     { "rule": "*semi", "severity": "off", "fixable": true }
   ],
 
+  "tailwindCSS.experimental.configFile": "./.nuxt/tailwind.config.cjs",
+
   // Enable eslint for all supported languages
   "eslint.validate": [
     "javascript",
