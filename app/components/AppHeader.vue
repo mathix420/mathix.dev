@@ -3,30 +3,11 @@
     <div class="flex flex-col items-center justify-center gap-2">
       <NuxtLink
         to="/"
-        class="inline-flex items-center text-xl font-black uppercase text-white dark:text-gray-100"
+        class="inline-flex items-center text-xl font-black uppercase text-white"
       >
         Arnaud Gissinger
       </NuxtLink>
-      <nav>
-        <NuxtLink
-          to="/"
-          class="text-white hover:text-gray-300 dark:text-gray-100 dark:hover:text-gray-200"
-        >
-          Home
-        </NuxtLink>
-        <NuxtLink
-          to="/blog"
-          class="ml-4 text-white hover:text-gray-300 dark:text-gray-100 dark:hover:text-gray-200"
-        >
-          Blog
-        </NuxtLink>
-        <NuxtLink
-          to="/manifesto"
-          class="ml-4 text-white hover:text-gray-300 dark:text-gray-100 dark:hover:text-gray-200"
-        >
-          Manifesto
-        </NuxtLink>
-      </nav>
+      <SmallNav />
     </div>
   </header>
 </template>

@@ -422,6 +422,10 @@ useSeoMeta({
       </div>
     </section>
 
-    <AppFooter />
+    <AppFooter>
+      <div class="-mb-2 flex w-full opacity-70">
+        <SmallNav class="mx-auto" />
+      </div>
+    </AppFooter>
   </main>
 </template>
