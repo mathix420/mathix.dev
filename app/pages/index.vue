@@ -111,6 +111,7 @@ useSeoMeta({
           :data-umami-event="`${link.name} Link`"
           :title="link.name"
           :to="link.link"
+          rel="me"
           target="_blank"
           external
         >
