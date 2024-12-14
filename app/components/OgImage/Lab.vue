@@ -19,7 +19,7 @@ withDefaults(defineProps<{
   >
     <div class="relative flex size-full flex-row justify-between">
       <div class="flex h-full flex-col justify-between">
-        <h1 class="text-left text-[80px] font-black">
+        <h1 class="w-[90%] text-left text-[90px] font-black">
           {{ title }}
         </h1>
 
