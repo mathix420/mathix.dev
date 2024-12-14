@@ -1,10 +1,29 @@
+<script setup lang="ts">
+const animate = ref(false);
+const signature = ref<SVGElement | null>(null);
+
+onMounted(() => {
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      animate.value = entry.isIntersecting;
+    });
+  });
+
+  if (signature.value) {
+    observer.observe(signature.value);
+  }
+});
+</script>
+
 <template>
   <svg
+    ref="signature"
     width="353"
     height="186"
     viewBox="0 0 353 186"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
+    :class="{ animate }"
   >
     <path
       d="M25 117C62.5 93 99 53.4999 113 1C76 73.4999 110 151.5 134 169C85 152 47 140 1 161C15 168 101 144 269 113.5"
@@ -39,7 +58,7 @@
     stroke-dasharray: unset !important;
   }
 }
-@keyframes grow {
+@keyframes draw {
   0% {
     stroke-dashoffset: 1px;
     stroke-dasharray: 0 var(--stroke-length);
@@ -51,30 +70,26 @@
   40% {
     stroke-dasharray: var(--stroke-length) 0;
   }
-  85% {
-    stroke-dasharray: var(--stroke-length) 0;
-  }
-  95%,
   to {
-    stroke-dasharray: 0 var(--stroke-length);
+    stroke-dasharray: var(--stroke-length) 0;
     opacity: 1;
   }
 }
 path {
   transition: opacity 0.4s ease;
+  opacity: 0;
 }
-svg:hover path {
+.animate path {
   --stroke-length: 2000px;
 
   stroke-dasharray: var(--stroke-length) 0;
-  animation: grow 9s ease forwards;
+  animation: draw 9s ease forwards;
   transform-origin: center;
 }
-svg:hover path.delayed {
+.animate path.delayed {
   --stroke-length: 1000px;
 
   stroke-dasharray: 0 var(--stroke-length);
   animation-delay: 0.8s;
-  opacity: 0;
 }
 </style>
