@@ -1,4 +1,8 @@
 <script setup lang="ts">
+import settings from "~~/settings";
+
+const url = useSiteConfig().url;
+
 const links = [
   {
     name: "Github",
@@ -36,6 +40,18 @@ const links = [
     icon: "simple-icons:gmail",
   },
 ];
+
+useSeoMeta({
+  title: settings.name,
+  titleTemplate: "",
+  description: settings.description,
+  ogTitle: settings.name,
+  ogDescription: settings.smallDescription,
+  ogUrl: url,
+  twitterTitle: settings.name,
+  twitterDescription: settings.description,
+  twitterCard: "summary_large_image",
+});
 </script>
 
 <template>

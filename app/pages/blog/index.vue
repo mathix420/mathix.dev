@@ -3,13 +3,21 @@ useSeoMeta({
   title: "Blog",
   description: "Blog posts by Arnaud Gissinger.",
 });
+
+const dateFmt = new Intl.DateTimeFormat("en-US", {
+  dateStyle: "long",
+  timeStyle: "short",
+});
 </script>
 
 <template>
-  <main>
+  <main class="flex flex-col gap-14">
     <ContentList
       v-slot="{ list }"
       path="/blog"
+      :query="{
+        sort: [{ date: -1 }],
+      }"
     >
       <article
         v-for="(post, uid) in list"
@@ -30,7 +38,7 @@ useSeoMeta({
           <div class="hidden items-center gap-x-4 text-xs sm:flex">
             <time
               :datetime="post.datetime"
-            >{{ post.date }}</time>
+            >{{ dateFmt.format(new Date(post.date)) }}</time>
           </div>
           <div class="group relative">
             <h3 class="mt-3 text-lg font-semibold leading-6">

@@ -1,6 +1,9 @@
 <template>
   <main>
     <slot />
+    <OgImage
+      component="OgImageLab"
+    />
   </main>
 </template>
 

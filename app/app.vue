@@ -1,8 +1,6 @@
 <script setup lang="ts">
 import settings from "~~/settings";
 
-const url = useSiteConfig().url;
-
 defineOgImageComponent("Mathix");
 
 useSchemaOrg([
@@ -19,16 +17,6 @@ useScript({
   "async": true,
   "data-website-id": "0e6f097f-7dbc-44d2-9843-5e0e09a290a8",
 }, { trigger: onMounted });
-
-useSeoMeta({
-  description: settings.description,
-  ogTitle: settings.name,
-  ogDescription: settings.smallDescription,
-  ogUrl: url,
-  twitterTitle: settings.name,
-  twitterDescription: settings.description,
-  twitterCard: "summary_large_image",
-});
 </script>
 
 <template>

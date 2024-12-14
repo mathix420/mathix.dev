@@ -98,7 +98,7 @@ withDefaults(defineProps<{
     >
       {{ emoji }}
     </p>
-    <p class="absolute bottom-0 right-5 rounded-xl bg-charcoal px-3 py-1 text-right text-3xl">
+    <p class="absolute bottom-2 right-5 rounded-xl bg-charcoal px-3 py-1 text-right text-3xl">
       Blog / mathix.dev
     </p>
   </div>
