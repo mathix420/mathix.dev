@@ -11,8 +11,8 @@
    * Don't get lost, first ideas are often best.
 4. Segment work & life.
    * Said 100 times but still underestimated.
-5. If it's < 10min, do it.
-   * Thinking about a task, if it's less than 10min, do it now.
+5. The 10 min rule.
+   * When a task should take you less than 10 min, do it now.
 6. Don't let customization become a feature.
    * Or every users not finding the exact setting they want will be disappointed.
 
