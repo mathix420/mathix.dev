@@ -26,16 +26,16 @@ useSeoMeta({
           :to="post.loc"
           class="group rounded-md p-3 hover:bg-white/5 focus-visible:bg-white/5 sm:p-5"
         >
-          <article class="flex items-center gap-4 sm:gap-10">
+          <article class="flex items-center gap-4 sm:gap-8">
             <time
-              class="w-[4ch] text-sm text-gray-300 group-hover:hidden group-focus-visible:hidden"
+              class="w-[5ch] shrink-0 text-sm text-gray-300 group-hover:hidden group-focus-visible:hidden"
               :datetime="post.datetime"
             >
               {{ new Date(post.date).getFullYear() }}
             </time>
             <p
               v-motion-roll-visible-bottom
-              class="hidden w-[4ch] whitespace-nowrap text-sm text-gray-300 group-hover:inline-block group-focus-visible:inline-block"
+              class="hidden w-[5ch] shrink-0 whitespace-nowrap text-sm text-gray-300 group-hover:inline-block group-focus-visible:inline-block"
             >
               {{ post.emojis.join(' ') }}
             </p>
