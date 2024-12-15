@@ -12,7 +12,7 @@ onMounted(() => {
     setInterval(() => {
       const currentTime = performance.timeOrigin + performance.now();
       secondsAngle.value = ((currentTime / 1000) % 60 * 6);
-      minutesAngle.value = (currentTime / 1000 / 60 + 35) % 60 * 6;
+      minutesAngle.value = (currentTime / 1000 / 60) % 60 * 6;
       hoursAngle.value = (currentTime / 1000 / 60 / 60) % 12 * 30;
     }, 50);
   }, 200);
