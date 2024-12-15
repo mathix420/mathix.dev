@@ -74,7 +74,7 @@ onMounted(() => {
           </div>
         </div>
       </div>
-      <div class="absolute -inset-10 rounded-full bg-[#1173ff]/10 backdrop-blur-[1px]" />
+      <div class="absolute -inset-10 max-w-[100vw] overflow-hidden rounded-full bg-[#1173ff]/10 backdrop-blur-[1px]" />
     </div>
   </main>
 </template>
