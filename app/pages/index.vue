@@ -416,7 +416,7 @@ useSeoMeta({
             I'm born
           </template>
           <template #description>
-            Yes, I'm a millennial, sorry.
+            Yes, I'm a zoomer, sorry.
           </template>
         </TimelineItem>
       </div>
