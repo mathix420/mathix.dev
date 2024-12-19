@@ -20,6 +20,12 @@ export default defineNuxtConfig({
     description: settings.description,
   },
 
+  content: {
+    highlight: {
+      theme: "aurora-x",
+    },
+  },
+
   routeRules: {
     "/cv/**": { robots: { indexable: false } },
     "/blog/**": { prerender: true },
