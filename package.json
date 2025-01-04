@@ -31,7 +31,6 @@
     "wrangler": "^3.99.0"
   },
   "trustedDependencies": [
-    "@mathix420/nuxt-layer",
-    "sharp"
+    "@mathix420/nuxt-layer"
   ]
 }

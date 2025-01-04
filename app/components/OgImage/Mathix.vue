@@ -15,6 +15,8 @@ withDefaults(defineProps<{
       <div class="flex h-full flex-col justify-between">
         <img
           src="/android-chrome-192x192.png"
+          height="192"
+          width="192"
           class="size-[192px] rounded-full"
         >
 
