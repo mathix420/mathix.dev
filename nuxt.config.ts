@@ -26,6 +26,12 @@ export default defineNuxtConfig({
     },
   },
 
+  mdc: {
+    highlight: {
+      langs: ["sql", "js", "json", "ts", "vue", "css", "html", "bash", "md", "mdc", "yaml"],
+    },
+  },
+
   routeRules: {
     "/cv/**": { robots: { indexable: false } },
     "/blog/**": { prerender: true },
@@ -79,5 +85,9 @@ export default defineNuxtConfig({
       "Archivo:400",
       "Archivo:900",
     ],
+  },
+
+  sitemap: {
+    autoLastmod: true,
   },
 });
