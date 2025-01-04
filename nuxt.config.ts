@@ -47,6 +47,10 @@ export default defineNuxtConfig({
     },
   },
 
+  hub: {
+    kv: true,
+  },
+
   fonts: {
     provider: "google",
     families: [
