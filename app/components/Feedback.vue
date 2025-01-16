@@ -33,6 +33,7 @@ async function vote() {
     Enjoyed this article?
     <button
       class="group flex items-center space-x-2 rounded-md bg-white/5 px-3 py-2 text-white/50 transition-colors hover:bg-white/10 focus-visible:bg-white/10"
+      data-umami-event="like"
       @click="vote"
     >
       <Icon
