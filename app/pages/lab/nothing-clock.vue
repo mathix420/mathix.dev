@@ -41,8 +41,8 @@ onMounted(() => {
         <div class="size-full rounded-full bg-[#1173ff]">
           <div
             :style="{ '--tw-rotate': `${hoursAngle}deg` }"
-            :class="hoursAngle > 359.91 || hoursAngle < 0.11 ? '' : 'transition-transform'"
-            class="absolute bottom-1/2 right-1/2 h-1/4 w-[6px] origin-bottom translate-x-1/2 rounded-full bg-white"
+            :class="hoursAngle > 359.64 || hoursAngle < 0.36 ? 'duration-0' : ''"
+            class="absolute bottom-1/2 right-1/2 h-1/4 w-[6px] origin-bottom translate-x-1/2 rounded-full bg-white transition-transform"
           >
             <div
               class="absolute -bottom-6 h-6 w-[6px] rounded-full bg-white"
@@ -50,8 +50,8 @@ onMounted(() => {
           </div>
           <div
             :style="{ '--tw-rotate': `${minutesAngle}deg` }"
-            :class="minutesAngle > 359.91 || minutesAngle < 0.11 ? '' : 'transition-transform'"
-            class="absolute bottom-1/2 right-1/2 h-1/2 w-[4px] origin-bottom translate-x-1/2 rounded-full bg-white"
+            :class="minutesAngle > 359.64 || minutesAngle < 0.36 ? 'duration-0' : ''"
+            class="absolute bottom-1/2 right-1/2 h-1/2 w-[4px] origin-bottom translate-x-1/2 rounded-full bg-white transition-transform"
           >
             <div
               class="absolute bottom-0 left-1/2 size-3 -translate-x-1/2 translate-y-1/2 rounded-full bg-white"
@@ -62,8 +62,8 @@ onMounted(() => {
           </div>
           <div
             :style="{ '--tw-rotate': `${secondsAngle}deg` }"
-            :class="secondsAngle > 359.91 || secondsAngle < 0.11 ? '' : 'transition-transform'"
-            class="absolute bottom-1/2 right-1/2 h-1/2 w-[2px] origin-bottom translate-x-1/2 rounded-full bg-red-500"
+            :class="secondsAngle > 359.64 || secondsAngle < 0.36 ? 'duration-0' : ''"
+            class="absolute bottom-1/2 right-1/2 h-1/2 w-[2px] origin-bottom translate-x-1/2 rounded-full bg-red-500 transition-transform"
           >
             <div
               class="absolute bottom-0 left-1/2 size-2 -translate-x-1/2 translate-y-1/2 rounded-full bg-red-500"
