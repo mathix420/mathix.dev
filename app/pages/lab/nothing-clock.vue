@@ -7,6 +7,9 @@ const secondsAngle = ref(0);
 const minutesAngle = ref(0);
 const hoursAngle = ref(0);
 
+const period = 200; // ms
+const gap = 360 / (1000 * 60) * period; // degrees
+
 onMounted(() => {
   setTimeout(() => {
     setInterval(() => {
@@ -15,7 +18,7 @@ onMounted(() => {
       minutesAngle.value = (currentTime / 1000 / 60) % 60 * 6;
       hoursAngle.value = (currentTime / 1000 / 60 / 60) % 12 * 30;
     }, 50);
-  }, 200);
+  }, period);
 });
 </script>
 
@@ -41,7 +44,7 @@ onMounted(() => {
         <div class="size-full rounded-full bg-[#1173ff]">
           <div
             :style="{ '--tw-rotate': `${hoursAngle}deg` }"
-            :class="hoursAngle > 359.64 || hoursAngle < 0.36 ? 'duration-0' : ''"
+            :class="hoursAngle < gap ? 'duration-0' : ''"
             class="absolute bottom-1/2 right-1/2 h-1/4 w-[6px] origin-bottom translate-x-1/2 rounded-full bg-white transition-transform"
           >
             <div
@@ -50,7 +53,7 @@ onMounted(() => {
           </div>
           <div
             :style="{ '--tw-rotate': `${minutesAngle}deg` }"
-            :class="minutesAngle > 359.64 || minutesAngle < 0.36 ? 'duration-0' : ''"
+            :class="minutesAngle < gap ? 'duration-0' : ''"
             class="absolute bottom-1/2 right-1/2 h-1/2 w-[4px] origin-bottom translate-x-1/2 rounded-full bg-white transition-transform"
           >
             <div
@@ -62,7 +65,7 @@ onMounted(() => {
           </div>
           <div
             :style="{ '--tw-rotate': `${secondsAngle}deg` }"
-            :class="secondsAngle > 359.64 || secondsAngle < 0.36 ? 'duration-0' : ''"
+            :class="secondsAngle < gap ? 'duration-0' : ''"
             class="absolute bottom-1/2 right-1/2 h-1/2 w-[2px] origin-bottom translate-x-1/2 rounded-full bg-red-500 transition-transform"
           >
             <div
