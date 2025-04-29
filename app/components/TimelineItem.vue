@@ -9,6 +9,7 @@ defineProps<{
   name: string;
   date: string;
   link?: string;
+  note?: string;
   images?: ImageProps[];
 }>();
 const slots = useSlots();
@@ -38,6 +39,14 @@ const slots = useSlots();
       class="text-xl sm:text-2xl"
     >
       <slot name="title" />
+    </p>
+
+    <!-- Note -->
+    <p
+      v-if="slots.note"
+      class="text-base text-white/25"
+    >
+      <slot name="note" />
     </p>
 
     <!-- Description -->

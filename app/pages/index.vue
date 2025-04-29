@@ -81,14 +81,14 @@ useSeoMeta({
         About Me
       </h2>
       <p class="mt-5 text-lg sm:text-xl">
-        I'm a French <span class="text-accent">Software Architect</span>, ex<NuxtLink
+        I'm a French <span class="text-accent">Product Engineer</span>, ex<NuxtLink
           to="https://42.fr/en/the-program/innovative-learning/"
           target="_blank"
           class="text-accent hover:underline"
         >
           42 Student
         </NuxtLink>
-        and ex-founder of <span class="text-accent">Peach</span>.
+        and 2x founder.
 
         <br>
 
@@ -131,8 +131,37 @@ useSeoMeta({
 
       <div class="mt-5 flex flex-col gap-10 sm:gap-20">
         <TimelineItem
+          link="https://adaptyvbio.com/"
+          date="Since 2025"
+          name="Adaptyv Bio"
+        >
+          <template #title>
+            Product Engineer <span class="text-accent">@Adaptyv Bio</span>
+          </template>
+          <template #description>
+            Lab as a service for protein designers. Y-Combinator S21.
+          </template>
+        </TimelineItem>
+
+        <TimelineItem
+          link="https://neuehaus.io/"
+          date="Since 2024"
+          name="NeueHaus"
+        >
+          <template #title>
+            Technical Advisor <span class="text-accent">@NeueHaus</span>
+          </template>
+          <template #note>
+            Started as Solution Architect
+          </template>
+          <template #description>
+            A professional network and membership-based community for expert freelancers and creative leaders.
+          </template>
+        </TimelineItem>
+
+        <TimelineItem
           link="https://contrat-ia.com"
-          date="2024"
+          date="Since 2024"
           name="Peach"
         >
           <template #title>
