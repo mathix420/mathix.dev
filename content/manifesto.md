@@ -3,7 +3,7 @@
 > This isn't a Bible, definitive, nor objective. I've found that following these points—most of the time—leads to better success in work and life yet.
 
 1. Keep it simple.
-   - Did you enjoyed the last time you've used something not simple?
+   - Complexity is just a combination of very simple things, but it's easy to panic when seeing the whole picture.
 2. 8/8/8
    - Hours of sleep, work and life.
 3. Don't forget your first idea.
