@@ -81,7 +81,7 @@ useSeoMeta({
         About Me
       </h2>
       <p class="mt-5 text-lg sm:text-xl">
-        I'm a French <span class="text-accent">Product Engineer</span>, ex<NuxtLink
+        I'm a French <span class="text-accent">Solution Architect</span>, ex<NuxtLink
           to="https://42.fr/en/the-program/innovative-learning/"
           target="_blank"
           class="text-accent hover:underline"
