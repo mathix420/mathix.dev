@@ -12,7 +12,7 @@ useSchemaOrg([
 ]);
 
 useScript({
-  "src": "https://cloud.umami.dev/script.js",
+  "src": "/umami/script.js",
   "defer": true,
   "async": true,
   "data-website-id": "0e6f097f-7dbc-44d2-9843-5e0e09a290a8",

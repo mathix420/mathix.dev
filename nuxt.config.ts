@@ -35,6 +35,7 @@ export default defineNuxtConfig({
   routeRules: {
     "/cv/**": { robots: { indexable: false } },
     "/blog/**": { prerender: true },
+    "/umami/**": { proxy: "https://cloud.umami.is/**" },
   },
 
   future: { compatibilityVersion: 4 },
