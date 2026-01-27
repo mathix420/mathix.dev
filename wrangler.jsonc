@@ -1,0 +1,20 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "mathix-dev",
+  "main": "./.output/server/index.mjs",
+  "compatibility_date": "2026-01-27",
+  "assets": {
+    "directory": "./.output/public/",
+    "binding": "ASSETS"
+  },
+  "observability": {
+    "enabled": true
+  },
+  "kv_namespaces": [
+    {
+      "binding": "KV",
+      "id": "2ae5d1f63a984f7cb770a16f4f97ce9f"
+    }
+  ],
+  "vars": {}
+}

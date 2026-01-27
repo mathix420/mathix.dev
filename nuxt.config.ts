@@ -39,9 +39,14 @@ export default defineNuxtConfig({
   },
 
   future: { compatibilityVersion: 4 },
-  compatibilityDate: "2024-04-03",
+  compatibilityDate: "2026-01-27",
 
   nitro: {
+    preset: "cloudflare_module",
+    cloudflare: {
+      deployConfig: true,
+      nodeCompat: true,
+    },
     prerender: {
       crawlLinks: true,
       routes: ["/", "/blog", "/feed.xml", "/feed.atom"],

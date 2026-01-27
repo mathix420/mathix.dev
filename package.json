@@ -29,7 +29,7 @@
     "@nuxthq/studio": "^2.2.1",
     "nuxt-feedme": "^1.0.0",
     "typescript": "^5.7.2",
-    "wrangler": "^3.99.0"
+    "wrangler": "^4.60.0"
   },
   "trustedDependencies": [
     "@mathix420/nuxt-layer"
