@@ -32,4 +32,6 @@ Locally preview production build:
 bun run preview
 ```
 
+Deployed on cloudflare workers.
+
 Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
