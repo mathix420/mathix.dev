@@ -28,7 +28,7 @@ export default defineNuxtConfig({
 
   mdc: {
     highlight: {
-      langs: ["sql", "js", "json", "ts", "vue", "css", "html", "bash", "md", "mdc", "yaml"],
+      langs: ["sql", "js", "json", "ts", "vue", "css", "html", "bash", "md", "mdc", "yaml", "python"],
     },
   },
 
