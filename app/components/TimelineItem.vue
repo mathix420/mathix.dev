@@ -58,21 +58,11 @@ const slots = useSlots();
     </p>
 
     <!-- Images -->
-    <div
+    <Carousel
       v-if="images?.length"
-      class="no-scrollbar mt-5 flex gap-5 overflow-y-scroll"
-    >
-      <NuxtImg
-        v-for="(image, idx) in images"
-        :key="`image-${name}-${idx}`"
-        format="webp"
-        :height="image.height"
-        :width="image.width"
-        loading="lazy"
-        :src="image.src"
-        :alt="name"
-        class="h-44 w-auto max-w-none rounded-xl object-cover"
-      />
-    </div>
+      class="mt-5"
+      :images="images"
+      :name="name"
+    />
   </article>
 </template>

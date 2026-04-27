@@ -5,6 +5,11 @@ export default defineNuxtConfig({
   extends: ["@mathix420/nuxt-layer"],
   modules: ["@nuxthub/core", "@nuxthq/studio", "@nuxtjs/device", "@vueuse/motion/nuxt"],
 
+  components: [
+    { path: "~/components/content", pathPrefix: false, global: true },
+    { path: "~/components" },
+  ],
+
   $production: {
     image: {
       provider: "cloudflare",
