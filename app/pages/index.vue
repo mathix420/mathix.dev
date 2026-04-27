@@ -136,10 +136,10 @@ useSeoMeta({
           name="Adaptyv Bio"
         >
           <template #title>
-            Product Engineer <span class="text-accent">@Adaptyv Bio</span>
+            Senior Product Engineer <span class="text-accent">@Adaptyv Bio</span>
           </template>
           <template #description>
-            Lab as a service for protein designers. Y-Combinator S21.
+            Lead engineer on the automation software stack. Built the scheduler and driver plugin system saving $200k+ vs. off-the-shelf solutions. Y-Combinator S21.
           </template>
         </TimelineItem>
 
