@@ -6,11 +6,17 @@ export default defineEventHandler(async (event) => {
     throw createError("Failed to get user IP address");
   }
 
-  if (await hubKV().get(`like:${objectId}:${userIpAddress}`)) {
+  const kv = event.context.cloudflare?.env?.KV;
+  if (!kv) {
+    throw createError("KV binding not available");
+  }
+
+  const key = `like:${objectId}:${userIpAddress}`;
+  if (await kv.get(key)) {
     return 0;
   }
 
-  await hubKV().set(`like:${objectId}:${userIpAddress}`, { createdAt: new Date().getTime(), objectId, ip: userIpAddress });
+  await kv.put(key, JSON.stringify({ createdAt: Date.now(), objectId, ip: userIpAddress }));
 
   return 1;
 });

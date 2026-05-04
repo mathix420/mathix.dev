@@ -1,5 +1,16 @@
+import aspectRatio from "@tailwindcss/aspect-ratio";
+import forms from "@tailwindcss/forms";
+import typography from "@tailwindcss/typography";
+import scrollbarHide from "tailwind-scrollbar-hide";
+
 /** @type {import('tailwindcss').Config} */
 export default {
+  plugins: [
+    typography,
+    forms,
+    aspectRatio,
+    scrollbarHide,
+  ],
   theme: {
     extend: {
       fontFamily: {

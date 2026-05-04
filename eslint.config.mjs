@@ -1,8 +1,16 @@
 // @ts-check
 // @ts-ignore
-import cfg from "@mathix420/nuxt-layer/eslint.config.mjs";
+import tailwind from "eslint-plugin-tailwindcss";
 import withNuxt from "./.nuxt/eslint.config.mjs";
 
 export default withNuxt(
-  cfg,
+  {
+    rules: {
+      "vue/multi-word-component-names": "off",
+      "tailwindcss/no-custom-classname": ["warn", {
+        whitelist: ["scrollbar-hide", "scrollbar-default"],
+      }],
+    },
+  },
+  ...tailwind.configs["flat/recommended"],
 );

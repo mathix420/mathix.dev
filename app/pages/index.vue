@@ -10,11 +10,6 @@ const links = [
     icon: "simple-icons:github",
   },
   {
-    name: "Bento",
-    link: "https://bento.me/agissing",
-    icon: "simple-icons:bento",
-  },
-  {
     name: "Bluesky",
     link: "https://bsky.app/profile/mathix.dev",
     icon: "simple-icons:bluesky",

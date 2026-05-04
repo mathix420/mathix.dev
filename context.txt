@@ -1,0 +1,91 @@
+# Arnaud Gissinger — Recruiter Context
+
+> One-page summary for recruiters evaluating fit, seniority, and signal.
+
+## Snapshot
+
+- **Name:** Arnaud Gissinger
+- **Nationality:** French
+- **Year of birth:** 2000
+- **Current role:** Product Engineer @ Adaptyv Bio (since 2025)
+- **Title/seniority signal:** Solution Architect / Senior Full-Stack / Senior Software Engineer
+- **Website:** https://mathix.dev
+- **Contact:** agissing@student.42.fr
+- **CVs:**
+  - [Senior Full-Stack Engineer](https://mathix.dev/cv/senior-full-stack-engineer.pdf)
+  - [Senior Software Engineer](https://mathix.dev/cv/senior-software-engineer.pdf)
+
+## Headline
+
+French Solution Architect, 42 School alumnus, 2× founder. Builds, breaks, and fixes products end-to-end — from infra and backend to UI and launch. Equally at home shipping solo side projects and architecting platforms that hit hundreds of thousands of users.
+
+## What I optimise for
+
+- **Shipping over theorising.** Products in production beat proofs on paper.
+- **Simplicity as a discipline.** Complexity is simple things stacked; I keep the stack honest.
+- **Ownership across the stack.** Infra, backend, frontend, design, product — I close the loop rather than handing it off.
+- **Open source as a default.** I publish tools I'd want to use myself.
+- See [manifesto](https://mathix.dev/manifesto) for the longer version (8/8/8, 10-min rule, etc.).
+
+## Career timeline
+
+| Year | Role | Company | Notes |
+| --- | --- | --- | --- |
+| 2025 → now | Product Engineer | **Adaptyv Bio** | Lab-as-a-service for protein designers. Y Combinator S21. |
+| 2024 → now | Technical Advisor (ex–Solution Architect) | **NeueHaus** | Membership community for expert freelancers & creative leaders. |
+| 2024 → now | Co-founder / Building | **Contrat-IA (Peach)** | Draft contracts by voice in seconds instead of days. |
+| 2020 – 2024 | Technical Founder | **Peach** | Streaming platform, scaled to **~500k MAU at peak**. |
+| 2023 | Solution Architect (freelance) | **Synergys Technologies** | Custom e-commerce tailored to industry needs. |
+| 2021 | IT Architect Consultant | **Adlin-Science** | Secure on-prem collaboration platform for research institutes, fully OSS stack. |
+| 2020 | Solution Architect (freelance) | **Fermat** | AI-powered invoicing & field-reports product. |
+| 2019 | Backend Developer | **Dropcontact (Station F)** | Led migration from monolith to scalable low-cost AWS architecture. |
+| 2018 | Student | **42 School (Paris)** | Ranked **7 / 1000** during the Paris selection pool ("la piscine"). |
+| 2015 – 2018 | — | High School | Electronics & mechanics. |
+
+## Selected projects
+
+- **Blaze** (2023) — Structured outputs from LLMs. Shipped *before* Microsoft TypeChat, before OpenAI structured outputs, and before dottxt-ai's Outlines ($12M funded). Early signal on an area that became a category.
+- **Free The Web Apps (FTWA)** (2024) — Turn any website into a native-like app in seconds. https://ftwa.mathix.dev
+- **Vuito** (2023) — Intuitive, lightweight, isomorphic, template-based validation library.
+- **Pylone** (2019) — Minimal AWS serverless deployment utility. https://github.com/mathix420/pylone
+- **Lab experiments** — e.g. Nothing Clock, Virtual Keyboard API demo. Small, sharp explorations of platform capabilities.
+
+## Tech signal (from work & projects)
+
+- **Cloud / infra:** AWS (serverless-first, monolith-to-scale migrations), on-prem OSS stacks.
+- **Backend:** Scalable API & data pipelines, streaming platforms at 500k MAU, LLM structured-output tooling.
+- **Frontend:** Vue / Nuxt, Tailwind, design-conscious UI work (personal site is hand-built in Nuxt 3).
+- **LLM / AI:** Productised voice-to-contract (Contrat-IA), early work on constrained LLM outputs (Blaze).
+- **Integrations:** Algolia + Supabase sync, cross-platform web↔native wrappers.
+- **Posture:** polyglot solution architect — picks the right tool, ships, and iterates.
+
+## Entrepreneurship
+
+- **2× founder.** Peach (streaming, scaled to 500k MAU) and Contrat-IA (AI contracts).
+- Comfortable wearing product, tech lead, and IC hats simultaneously.
+- First program at 10. First software sold at 15 (VisualBasic cash-register app). First startup at 19.
+
+## Writing & community
+
+- Blog at https://mathix.dev/blog. Topics shipped so far:
+  - Using Google Dorks to find your dream job.
+  - Fixing HTML elements on top of the iOS keyboard (HTML/CSS/JS).
+  - Journey through hydroponics.
+  - Syncing Supabase and Algolia.
+- Active on GitHub (`mathix420`), Stack Overflow, Bluesky, LinkedIn.
+
+## What to pitch me
+
+- **Product-engineering / staff-level IC** roles where one person is expected to own a problem end-to-end.
+- **Solution architect / tech lead** roles at early-stage or scale-up teams that value pragmatism over process.
+- **Founding engineer** seats at serious, technical companies (bonus points for YC-style velocity, AI/LLM, dev-tools, or infra).
+- Anything that rewards builders who ship, measure, and iterate — and that takes OSS seriously.
+
+## Links
+
+- GitHub — https://github.com/mathix420
+- LinkedIn — https://www.linkedin.com/in/agissing/
+- Stack Overflow — https://stackoverflow.com/users/9799292/mathix420
+- Bluesky — https://bsky.app/profile/mathix.dev
+- Bento — https://bento.me/agissing
+- read.cv — https://read.cv/mathix

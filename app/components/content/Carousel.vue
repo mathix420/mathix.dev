@@ -28,7 +28,7 @@ function close() {
 
 <template>
   <div class="not-prose">
-    <div class="no-scrollbar flex gap-5 overflow-y-scroll">
+    <div class="scrollbar-hide flex gap-5 overflow-x-auto">
       <button
         v-for="(image, idx) in images"
         :key="`${name}-${idx}`"

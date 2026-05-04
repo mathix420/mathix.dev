@@ -1,0 +1,28 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "mathix-dev",
+  "account_id": "ae8d264086baaaa1966b2898ebc313ee",
+  "main": "./.output/server/index.mjs",
+  "compatibility_date": "2025-04-01",
+  "compatibility_flags": ["nodejs_compat"],
+  "assets": {
+    "binding": "ASSETS",
+    "directory": "./.output/public/"
+  },
+  "kv_namespaces": [
+    {
+      "binding": "KV",
+      "id": "2ae5d1f63a984f7cb770a16f4f97ce9f"
+    }
+  ],
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "mathix-dev-content",
+      "database_id": "6c095ae5-13e2-4d90-91a7-d45030a2c2f0"
+    }
+  ],
+  "observability": {
+    "enabled": true
+  }
+}

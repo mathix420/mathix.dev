@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import settings from "~~/settings";
 
-defineOgImageComponent("Mathix");
+defineOgImage("Mathix");
 
 useSchemaOrg([
   definePerson({

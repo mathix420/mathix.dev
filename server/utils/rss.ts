@@ -4,7 +4,7 @@ import type { H3Event } from "h3";
 import { Feed } from "feed";
 import * as cheerio from "cheerio";
 import settings from "~~/settings";
-import { serverQueryContent } from "#content/server";
+import { queryCollection } from "@nuxt/content/server";
 
 export async function generateBlogFeed(event: H3Event) {
   // Fetch all documents
@@ -23,7 +23,7 @@ export async function generateBlogFeed(event: H3Event) {
     },
   });
 
-  const posts = await serverQueryContent(event, "blog").sort({ datePublished: -1 }).find();
+  const posts = await queryCollection(event, "blog").order("date", "DESC").all();
 
   for (const post of posts) {
     if (!post.loc) continue;

@@ -2,8 +2,29 @@ import settings from "./settings";
 
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  extends: ["@mathix420/nuxt-layer"],
-  modules: ["@nuxthub/core", "@nuxthq/studio", "@nuxtjs/device", "@vueuse/motion/nuxt"],
+  modules: [
+    "@nuxtjs/seo",
+    "@nuxt/content",
+    "@nuxt/scripts",
+    "@nuxt/fonts",
+    "@nuxt/image",
+    "nuxt-headlessui",
+    "@nuxtjs/tailwindcss",
+    "@nuxt/eslint",
+    "@nuxt/icon",
+    "@nuxtjs/device",
+    "@vueuse/motion/nuxt",
+  ],
+
+  eslint: {
+    config: {
+      stylistic: {
+        quotes: "double",
+        semi: true,
+        braceStyle: "1tbs",
+      },
+    },
+  },
 
   components: [
     { path: "~/components/content", pathPrefix: false, global: true },
@@ -26,14 +47,17 @@ export default defineNuxtConfig({
   },
 
   content: {
-    highlight: {
-      theme: "aurora-x",
+    database: {
+      type: "d1",
+      bindingName: "DB",
     },
-  },
-
-  mdc: {
-    highlight: {
-      langs: ["sql", "js", "json", "ts", "vue", "css", "html", "bash", "md", "mdc", "yaml"],
+    build: {
+      markdown: {
+        highlight: {
+          theme: "aurora-x",
+          langs: ["sql", "js", "json", "ts", "vue", "css", "html", "bash", "md", "mdc", "yaml"],
+        },
+      },
     },
   },
 
@@ -43,24 +67,20 @@ export default defineNuxtConfig({
     "/umami/**": { proxy: "https://cloud.umami.is/**" },
   },
 
-  future: { compatibilityVersion: 4 },
-  compatibilityDate: "2024-04-03",
+  compatibilityDate: "2025-04-01",
 
   nitro: {
+    preset: "cloudflare-module",
     prerender: {
       crawlLinks: true,
       routes: ["/", "/blog", "/feed.xml", "/feed.atom"],
     },
   },
 
-  hub: {
-    kv: true,
-  },
-
   fonts: {
     provider: "google",
     families: [
-      { name: "Archivo" },
+      { name: "Archivo", weights: [400, 600, 900] },
     ],
   },
 
@@ -71,7 +91,6 @@ export default defineNuxtConfig({
     clientBundle: {
       icons: [
         "simple-icons:github",
-        "simple-icons:bento",
         "simple-icons:bluesky",
         "simple-icons:stackoverflow",
         "simple-icons:matrix",
@@ -91,10 +110,6 @@ export default defineNuxtConfig({
 
   ogImage: {
     zeroRuntime: true,
-    fonts: [
-      "Archivo:400",
-      "Archivo:900",
-    ],
   },
 
   sitemap: {
